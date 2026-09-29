@@ -1,0 +1,9 @@
+.env
+data/*.sqlite3
+__pycache__/
+.vercel
+.venv
+data/*
+!data/.gitkeep
+.env*
+.DS_Store

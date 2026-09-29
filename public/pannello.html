@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Brief — pannello</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23123a6b'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Georgia'>AI</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><div class="brand"><b>AI Brief · le tue preferenze</b>
+  <small>Link personale, senza login.</small></div></div></header>
+<main class="wrap" style="padding-top:20px">
+  <div id="confirm" class="card hidden" style="border-color:var(--accent)">
+    <h3>Confermi?</h3>
+    <p id="confirm-text" style="margin:0 0 12px"></p>
+    <button id="confirm-yes" class="btn">Conferma</button> <a href="#" id="confirm-no" style="margin-left:10px">Annulla</a>
+    <p class="muted" style="font-size:12.5px;margin:12px 0 0">Chiediamo conferma perché gli antivirus aziendali aprono da soli tutti i link delle mail.</p>
+  </div>
+  <div id="err" class="notice warn hidden"></div>
+  <div class="grid2">
+    <div>
+      <div class="card"><h3>I tuoi interessi</h3>
+        <div id="chips" class="chips" style="margin-bottom:10px"></div>
+        <form id="add" style="display:flex;gap:8px"><input id="new" placeholder="es. logistica, IA in sanità…" style="flex:1"><button class="btn ghost">Aggiungi</button></form>
+      </div>
+      <div class="card"><h3>I tuoi voti</h3><div class="tbl-wrap"><table id="fb"></table></div></div>
+      <div class="card"><h3>Uscite ricevute</h3><div id="rec"></div></div>
+    </div>
+    <aside><div class="card"><h3>Profilo</h3><div id="prof"></div>
+      </div></aside>
+  </div>
+</main>
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const token = location.pathname.split("/").filter(Boolean).pop() === "pannello.html" ? new URLSearchParams(location.search).get("t") : location.pathname.split("/").filter(Boolean).pop();
+const qs = new URLSearchParams(location.search);
+const LABEL = { interessa: "👍 mi interessa", non_interessa: "👎 non mi interessa", affidabile: "✔ fonte affidabile", non_affidabile: "✖ fonte non affidabile" };
+let interessi = [];
+
+async function api(path, body) {
+  const r = await fetch(path, body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : {});
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(d.detail || r.status);
+  return d;
+}
+
+async function load() {
+  try {
+    const p = await api(`/api/panel/${encodeURIComponent(token)}`);
+    const pr = p.profilo;
+    $("#prof").innerHTML = `<b>${esc(pr.ruolo)}</b><br>${esc(pr.organizzazione)}<br><span class="muted">${esc(pr.settore)} · maturità ${esc(pr.maturita.replace("_", " "))} · ${esc(pr.dimensione)}</span>`;
+    interessi = p.interessi; chips();
+    $("#fb").innerHTML = p.feedback.length ? `<tr><th>Quando</th><th>Su</th><th>Voto</th></tr>` + p.feedback.map((f) => `<tr><td>${esc(f.ts.slice(0, 16).replace("T", " "))}</td><td>${esc(f.tipo === "fonte" ? f.dominio : f.titolo)}</td><td>${LABEL[f.valore] || esc(f.valore)}</td></tr>`).join("") : "<tr><td class='muted'>Nessun feedback ancora.</td></tr>";
+    $("#rec").innerHTML = p.ricevute.length ? p.ricevute.map((r) => `<details><summary>${esc(r.ts.slice(0, 10))} — ${esc(r.oggetto)}</summary><ol>${r.notizie.map((t) => `<li>${esc(t)}</li>`).join("")}</ol>${r.personalizzate.length ? `<p class="muted">Per te: ${r.personalizzate.map(esc).join(" · ")}</p>` : ""}</details>`).join("") : "<p class='muted'>Nessuna uscita ancora.</p>";
+  } catch (e) { $("#err").classList.remove("hidden"); $("#err").textContent = "Link non valido."; }
+}
+
+function chips() {
+  $("#chips").innerHTML = interessi.map((i, n) => `<span class="chip">${esc(i)}<button aria-label="rimuovi" data-n="${n}">×</button></span>`).join("");
+  document.querySelectorAll("#chips button").forEach((b) => b.onclick = () => { interessi.splice(+b.dataset.n, 1); savePrefs(); });
+}
+async function savePrefs() { interessi = (await api("/api/prefs", { token, interessi })).interessi; chips(); }
+$("#add").onsubmit = (e) => { e.preventDefault(); const v = $("#new").value.trim(); if (v) { interessi.push(v); $("#new").value = ""; savePrefs(); } };
+
+// azione arrivata da un pulsante della mail: si mostra la conferma, il voto parte solo con POST
+if (qs.get("azione")) {
+  const tipo = qs.get("azione"), valore = qs.get("valore");
+  const su = tipo === "fonte" ? `la fonte <b>${esc(qs.get("dominio"))}</b>` : `la notizia <b>${esc(qs.get("titolo"))}</b>`;
+  $("#confirm-text").innerHTML = `Registrare ${LABEL[valore] || esc(valore)} per ${su}?`;
+  $("#confirm").classList.remove("hidden");
+  $("#confirm-yes").onclick = async () => {
+    await api("/api/feedback", { token, tipo, valore, run: qs.get("run") || "replay", item: qs.get("item") || "", titolo: qs.get("titolo") || "", dominio: qs.get("dominio") || "", tipo_notizia: qs.get("tipo_notizia") || "" });
+    $("#confirm").innerHTML = "<h3>Fatto.</h3><p class='muted' style='margin:0'>Torna alla demo: la sezione \"Per te\" è già aggiornata.</p>";
+    history.replaceState(null, "", location.pathname); load();
+  };
+  $("#confirm-no").onclick = (e) => { e.preventDefault(); $("#confirm").classList.add("hidden"); history.replaceState(null, "", location.pathname); };
+}
+load();
+</script>
+</body>
+</html>

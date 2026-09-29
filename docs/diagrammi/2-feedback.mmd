@@ -1,0 +1,10 @@
+flowchart TB
+  MAIL["📧 Newsletter<br/>pulsanti 👍/👎 · fonte affidabile?"] --> CONF["Pagina di conferma (POST)<br/>blocca i click automatici<br/>degli scanner (Safe Links)"]
+  PAN["Pannello personale<br/>link con token, senza login"] --> CONF
+  CONF --> EV[("Eventi di feedback<br/>per destinatario")]
+  EV --> U["Circuito PER UTENTE<br/>interessi · notizie scartate · fonti escluse"]
+  EV --> G["Circuito GLOBALE<br/>affidabilità fonti = prior ± voti<br/>(soglia 2 voti netti, max ±0,3)"]
+  U --> PERS["Sezione 'Selezionate per te'"]
+  G --> SCORE["Punteggio dei temi<br/>del nucleo comune"]
+  CLK["Click tracciati<br/>(filtrati da scanner e bot)"] -. "oggi: solo consultazione" .-> DASH["Dashboard analytics<br/>per il redattore"]
+  DASH -. "domani: segnale debole,<br/>mai sopra il feedback esplicito" .-> SCORE

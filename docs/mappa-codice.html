@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mappa di AI Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f5f6f8; --surface: #ffffff; --ink: #18202e; --muted: #5a6475; --line: #dfe3ea;
+  --accent: #123a6b; --accent-soft: #e5ecf6;
+  --llm: #8a4b00; --llm-soft: #fbefdc; --code: #1d6b47; --code-soft: #e2f2e9; --human: #5b3a8a; --human-soft: #eee6f8;
+  --serif: "Source Serif 4", Georgia, serif; --sans: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { color-scheme: dark;
+    --bg: #12161d; --surface: #1a1f28; --ink: #e6e9ee; --muted: #9aa3b2; --line: #2c3340;
+    --accent: #8fb4e8; --accent-soft: #1f2d42; --llm: #e9b66b; --llm-soft: #3a2d18; --code: #74cfa0; --code-soft: #1b3327; --human: #c3a5ef; --human-soft: #2e2440; }
+}
+:root[data-theme="dark"] { color-scheme: dark;
+  --bg: #12161d; --surface: #1a1f28; --ink: #e6e9ee; --muted: #9aa3b2; --line: #2c3340;
+  --accent: #8fb4e8; --accent-soft: #1f2d42; --llm: #e9b66b; --llm-soft: #3a2d18; --code: #74cfa0; --code-soft: #1b3327; --human: #c3a5ef; --human-soft: #2e2440; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.6 var(--sans); padding-inline: 16px; }
+.page { max-width: 980px; margin: 0 auto; padding-block: 32px 64px; }
+h1, h2 { font-family: var(--serif); text-wrap: balance; line-height: 1.2; }
+h1 { font-size: 34px; margin: 0 0 8px; }
+h2 { font-size: 23px; margin: 48px 0 6px; }
+h3 { font-size: 16px; margin: 0; }
+p { max-width: 68ch; }
+.lead { color: var(--muted); font-size: 16.5px; margin: 0; }
+code, .mono { font-family: var(--mono); font-size: 13px; }
+code { background: var(--accent-soft); color: var(--accent); padding: 1px 5px; border-radius: 4px; }
+.tag { display: inline-block; font: 600 11px/1 var(--sans); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border-radius: 4px; vertical-align: middle; }
+.tag.llm { background: var(--llm-soft); color: var(--llm); } .tag.code { background: var(--code-soft); color: var(--code); } .tag.human { background: var(--human-soft); color: var(--human); }
+.note { background: var(--accent-soft); border-radius: 8px; padding: 14px 16px; max-width: 76ch; }
+.flow { display: grid; gap: 0; margin-top: 14px; }
+.stage { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 14px; position: relative; padding-bottom: 14px; }
+.stage::before { content: ""; position: absolute; left: 16px; top: 34px; bottom: 0; width: 2px; background: var(--line); }
+.stage:last-child::before { display: none; }
+.num { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; font: 600 14px var(--sans); background: var(--surface); border: 2px solid var(--line); }
+.stage.llm .num { border-color: var(--llm); color: var(--llm); } .stage.code .num { border-color: var(--code); color: var(--code); } .stage.human .num { border-color: var(--human); color: var(--human); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+.card .head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-bottom: 6px; }
+.card p { margin: 4px 0; }
+dl { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 4px 12px; margin: 8px 0 0; font-size: 14px; }
+dt { color: var(--muted); } dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.tbl { overflow-x: auto; margin-top: 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+td code { white-space: nowrap; }
+pre.mermaid { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; overflow-x: auto; }
+.loop { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-top: 12px; }
+.loop .card b { display: block; margin-bottom: 4px; }
+footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
+.ladder { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; margin-top: 14px; }
+.ladder .card { position: relative; padding-top: 16px; }
+.ladder h3 { margin-bottom: 6px; }
+.ladder p { font-size: 14px; }
+.lvl { position: absolute; top: 12px; right: 14px; font: 600 22px var(--serif); color: var(--line); }
+.mini { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; font-size: 12px; margin: 8px 0; color: var(--muted); }
+.mini span { background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 2px 6px; color: var(--ink); }
+.mini span.m { background: var(--llm-soft); color: var(--llm); border-color: transparent; }
+.mini span.c { background: var(--code-soft); color: var(--code); border-color: transparent; }
+.ex { color: var(--muted); font-size: 13px !important; }
+.codes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; }
+.codes pre { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; font: 13px/1.55 var(--mono); overflow-x: auto; }
+.cap { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 600; margin-bottom: 6px; }
+</style>
+<script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs"; mermaid.initialize({ startOnLoad: true, theme: matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default" });</script>
+</head>
+<body>
+
+<div class="page">
+  <h1>Mappa di AI Brief</h1>
+  <p class="lead">Cosa succede, file per file, quando la demo genera una newsletter. Codice in <code>ai-brief-demo/</code>, online su ai-brief-demo-one.vercel.app.</p>
+
+  <h2>Chiamata, pipeline, agente: la differenza</h2>
+  <p>La domanda da farsi è una sola: <b>chi decide cosa succede dopo?</b> Se lo decide il tuo codice, è una chiamata o una pipeline. Se lo decide il modello, di volta in volta, è un agente.</p>
+
+  <div class="ladder">
+    <div class="card"><div class="lvl">1</div><h3>Chiamata</h3>
+      <p>Mandi un testo al modello, ricevi un testo. Finito. Il modello non agisce nel mondo: non cerca, non salva, non clicca.</p>
+      <div class="mini"><span>testo</span>→<span class="m">modello</span>→<span>risposta</span></div>
+      <p class="ex">Es.: "riassumi questo articolo".</p></div>
+    <div class="card"><div class="lvl">2</div><h3>Pipeline (o workflow)</h3>
+      <p>Più chiamate in fila, e tra una e l'altra il tuo codice fa cose (cerca, filtra, conta). <b>L'ordine è scritto nel codice</b>, sempre lo stesso.</p>
+      <div class="mini"><span class="m">LLM</span>→<span class="c">codice</span>→<span class="m">LLM</span>→<span class="c">codice</span></div>
+      <p class="ex">Es.: la nostra demo.</p></div>
+    <div class="card"><div class="lvl">3</div><h3>Uso di strumenti (tool use)</h3>
+      <p>Dai al modello un elenco di strumenti ("cerca_notizie", "leggi_articolo"). Il modello risponde "usa cerca_notizie con questa query", il tuo codice la esegue e gli restituisce il risultato. <b>È il modello a scegliere lo strumento</b>, ma per un passo solo.</p>
+      <div class="mini"><span class="m">modello</span>→<span>"usa X"</span>→<span class="c">codice esegue X</span>→<span class="m">modello</span></div></div>
+    <div class="card"><div class="lvl">4</div><h3>Agente</h3>
+      <p>Lo strumento dentro un <b>ciclo</b>: il modello guarda l'obiettivo, sceglie un'azione, vede il risultato, sceglie la prossima… finché decide di aver finito. <b>Il percorso lo decide il modello</b>, e può essere diverso ogni volta.</p>
+      <div class="mini"><span class="m">modello</span>⇄<span class="c">strumenti</span><span>(ripete finché serve)</span></div>
+      <p class="ex">Es.: Claude Code, che legge file, lancia comandi, guarda l'errore e riprova.</p></div>
+  </div>
+
+  <p style="margin-top:18px">La stessa differenza in pseudo-codice:</p>
+  <div class="codes">
+    <div><div class="cap">Pipeline: il codice decide l'ordine</div>
+<pre>query    = llm(PIANIFICA)
+articoli = cerca(query)
+schede   = llm(VALUTA, articoli)
+temi     = llm(RAGGRUPPA, schede)
+mail     = llm(SCRIVI, temi)</pre></div>
+    <div><div class="cap">Agente: il modello decide il prossimo passo</div>
+<pre>storia = [obiettivo]
+while True:
+    azione = llm(storia, strumenti)
+    if azione == "ho finito":
+        break
+    risultato = esegui(azione)
+    storia.append(risultato)</pre></div>
+  </div>
+
+  <h2>Quando conviene un agente</h2>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Pipeline</th><th>Agente</th></tr></thead>
+    <tbody>
+      <tr><td>Quando</td><td>i passi sono noti in anticipo</td><td>i passi dipendono da cosa si trova strada facendo</td></tr>
+      <tr><td>Costo e tempi</td><td>prevedibili (qui 9 chiamate, sempre)</td><td>variabili: può fare 3 giri o 30</td></tr>
+      <tr><td>Test</td><td>ogni passo si prova da solo</td><td>difficile: il percorso cambia a ogni run</td></tr>
+      <tr><td>Errori</td><td>sai in quale passo è successo</td><td>possono accumularsi di giro in giro</td></tr>
+    </tbody>
+  </table></div>
+  <p>La regola di mercato (è anche la raccomandazione di Anthropic in "Building effective agents"): <b>parti dalla soluzione più semplice che funziona</b>, e usa un agente solo dove serve davvero decidere strada facendo.</p>
+
+  <h2>Dove sta la nostra demo</h2>
+  <div class="note">
+    <p style="margin:0 0 8px">È una <b>pipeline</b> di 5 chiamate con ruolo fisso, messe in fila dal codice. L'unico passaggio con un tocco agentico è il primo: il modello <b>decide cosa cercare</b> e il codice esegue le ricerche. È un solo giro, però, senza ciclo.</p>
+    <p style="margin:0">Come diventerebbe un agente: il pianificatore guarda i risultati e, se un tema ha poche fonti o solo fonti deboli, <b>decide da solo di fare altre ricerche</b>, finché la copertura è sufficiente. È un'estensione sensata per la versione reale; per una demo che deve costare poco ed essere prevedibile, la pipeline è la scelta giusta.</p>
+  </div>
+
+  <h2>Una run, dall'inizio alla fine</h2>
+  <p>Ogni riga è un passaggio. Il colore dice chi lo fa: <span class="tag llm">LLM</span> il modello, <span class="tag code">codice</span> Python deterministico, <span class="tag human">umano</span> il redattore.</p>
+
+  <div class="flow">
+    <div class="stage llm"><div class="num">1</div><div class="card">
+      <div class="head"><h3>Pianificatore: decide cosa cercare</h3><span class="tag llm">LLM</span></div>
+      <p>Riceve la data di oggi e il profilo del lettore tipo, e restituisce 8–10 ricerche che coprono tutti i temi (strategia, governance, casi d'uso, regolazione, competenze, investimenti, tecnologia). Poi il codice aggiunge una ricerca per ogni interesse dei lettori, come "logistica intelligenza artificiale".</p>
+      <dl><dt>Funzione</dt><dd><code>core/pipeline.py → plan()</code></dd>
+          <dt>Prompt</dt><dd><code>core/prompts.py → PLANNER</code></dd>
+          <dt>Output</dt><dd><code>QueryPlan</code> in <code>core/models.py</code>: lista di {query, tema, lingua}</dd>
+          <dt>Endpoint</dt><dd><code>POST /api/live/start</code> · 1 chiamata</dd></dl>
+    </div></div>
+
+    <div class="stage code"><div class="num">2</div><div class="card">
+      <div class="head"><h3>Ricerca e pulizia</h3><span class="tag code">codice</span></div>
+      <p>Esegue le ricerche su Google News RSS in parallelo (6 alla volta), tiene solo gli ultimi 14 giorni, elimina i doppioni per link e titolo, prende a turno un risultato per ricerca e si ferma a 24 articoli online (40 in locale). A ogni articolo assegna un'affidabilità della fonte.</p>
+      <dl><dt>Funzione</dt><dd><code>core/sources.py → fetch()</code>, <code>_search()</code></dd>
+          <dt>Affidabilità</dt><dd><code>TRUST_PRIOR</code> (punteggi di partenza: istituzioni 0,95, testate 0,7–0,9, altre 0,5), corretti dai voti dei lettori</dd>
+          <dt>Endpoint</dt><dd><code>POST /api/live/{run}/fetch</code> · nessuna chiamata al modello</dd></dl>
+    </div></div>
+
+    <div class="stage llm"><div class="num">3</div><div class="card">
+      <div class="head"><h3>Giudice: dà un voto a ogni articolo</h3><span class="tag llm">LLM</span></div>
+      <p>Legge titolo, testata ed estratto di 8 articoli alla volta e per ognuno compila una scheda: tema, tipo di notizia, settori, parole chiave, <b>rilevanza 1–5</b> per un AI decision maker, <b>hype 1–5</b> e una frase di sintesi.</p>
+      <dl><dt>Funzione</dt><dd><code>core/pipeline.py → extract()</code></dd>
+          <dt>Prompt</dt><dd><code>EXTRACTOR</code></dd>
+          <dt>Output</dt><dd><code>ExtractBatch</code> → lista di <code>ArticleEval</code></dd>
+          <dt>Endpoint</dt><dd><code>POST /api/live/{run}/extract/{lotto}</code> · 3 chiamate online (24 articoli ÷ 8)</dd></dl>
+    </div></div>
+
+    <div class="stage llm"><div class="num">4</div><div class="card">
+      <div class="head"><h3>Caporedattore: raggruppa, poi il codice sceglie</h3><span class="tag llm">LLM</span><span class="tag code">codice</span></div>
+      <p>Il codice scarta prima le notizie con rilevanza sotto 3 o hype sopra 3. Il modello raggruppa quelle rimaste in <b>temi</b>, cioè articoli che raccontano lo stesso fatto. Il codice calcola il punteggio di ogni tema e ne sceglie 5–7.</p>
+      <dl><dt>Funzioni</dt><dd><code>cluster()</code> (LLM, prompt <code>CLUSTERER</code>), <code>score_theme()</code> e <code>select()</code> (codice)</dd>
+          <dt>Punteggio</dt><dd class="mono">0,45·rilevanza + 0,30·affidabilità + 0,25·testate diverse − 0,15·hype</dd>
+          <dt>Regole</dt><dd>massimo 2 temi per tipo, almeno 1 di regolazione se c'è</dd>
+          <dt>Endpoint</dt><dd><code>POST /api/live/{run}/cluster</code> · 1 chiamata</dd></dl>
+    </div></div>
+
+    <div class="stage human"><div class="num">5</div><div class="card">
+      <div class="head"><h3>Il redattore approva</h3><span class="tag human">umano</span></div>
+      <p>La run si ferma. Il redattore spunta i temi che vanno nella mail per tutti e il <b>pool</b> di notizie da cui si pescano quelle personalizzate. La proposta di partenza viene da <code>pool_rule()</code>: gli articoli dei temi scelti più le notizie con rilevanza ≥ 2 e hype ≤ 3.</p>
+      <dl><dt>Endpoint</dt><dd><code>POST /api/run/{run}/editor</code> · nessuna chiamata</dd>
+          <dt>Nel replay</dt><dd>l'approvazione è simulata dalla stessa regola</dd></dl>
+    </div></div>
+
+    <div class="stage llm"><div class="num">6</div><div class="card">
+      <div class="head"><h3>Redattore: scrive la newsletter</h3><span class="tag llm">LLM</span></div>
+      <p>Scrive oggetto, editoriale, una notizia per tema (fatto e commento separati) e 3 frasi "da portare in riunione". Per le fonti indica solo gli <b>id</b> degli articoli: link e testate li aggiunge il codice, dopo aver controllato che quegli id appartengano davvero al tema.</p>
+      <dl><dt>Funzione</dt><dd><code>core/pipeline.py → write()</code></dd>
+          <dt>Prompt</dt><dd><code>EDITOR</code>, il system prompt principale</dd>
+          <dt>Output</dt><dd><code>NewsletterCore</code></dd>
+          <dt>Correzione</dt><dd>se il codice conta meno di 1.500 parole, rimanda la bozza al modello chiedendo di allungare solo i commenti</dd>
+          <dt>Endpoint</dt><dd><code>POST /api/live/{run}/write</code> · 1 chiamata (2 se serve la correzione)</dd></dl>
+    </div></div>
+
+    <div class="stage code"><div class="num">7</div><div class="card">
+      <div class="head"><h3>Controlli automatici</h3><span class="tag code">codice</span></div>
+      <p>Lunghezza tra 1.500 e 2.500 parole, 5–7 notizie, almeno una fonte verificata per notizia, massimo 2 temi per tipo, presenza della regolazione. Sono le chip verdi sopra la mail.</p>
+      <dl><dt>Funzione</dt><dd><code>core/pipeline.py → qa()</code></dd></dl>
+    </div></div>
+
+    <div class="stage llm"><div class="num">8</div><div class="card">
+      <div class="head"><h3>Adattatore: una versione per ogni profilo</h3><span class="tag llm">LLM</span></div>
+      <p>Per ogni segmento (settore × maturità × dimensione) riordina le notizie e riscrive il commento. Titoli e fatti non li può toccare.</p>
+      <dl><dt>Funzione</dt><dd><code>core/pipeline.py → personalize()</code></dd>
+          <dt>Prompt</dt><dd><code>PERSONALIZER</code></dd>
+          <dt>Output</dt><dd><code>SegmentVariant</code>: ordine + commento adattato per ogni notizia</dd>
+          <dt>Endpoint</dt><dd><code>POST /api/live/{run}/personalize/{n}</code> · 3 chiamate, una per segmento</dd></dl>
+    </div></div>
+
+    <div class="stage code"><div class="num">9</div><div class="card">
+      <div class="head"><h3>La mail di ogni lettore</h3><span class="tag code">codice</span></div>
+      <p>Quando si apre la mail di un lettore, il codice monta: versione del suo segmento + sezione <b>"Per te"</b>. Quest'ultima la calcola al momento, senza modello: cerca nel pool approvato le notizie che corrispondono ai suoi interessi, esclude quelle che ha scartato e le fonti che ha segnato come non affidabili, e ne tiene 2.</p>
+      <dl><dt>Funzioni</dt><dd><code>render_for()</code>, <code>personal_section()</code></dd>
+          <dt>Endpoint</dt><dd><code>GET /api/run/{run}/render/{token}</code></dd></dl>
+    </div></div>
+  </div>
+  <p>Totale online: <b>9 chiamate al modello per run</b> (1 + 3 + 1 + 1 + 3). Da qui "circa 5 run al giorno" con le 50 chiamate gratuite di OpenRouter.</p>
+
+  <h2>Chi chiama chi</h2>
+  <pre class="mermaid">
+sequenceDiagram
+  participant P as Pagina (app.js)
+  participant A as API (api/index.py)
+  participant C as core/pipeline.py
+  participant L as core/llm.py
+  participant M as Modello (OpenRouter o Gemma)
+  participant G as Google News
+  participant K as Upstash
+  P->>A: POST /api/live/start (codice)
+  A->>K: controlla e conta la quota
+  A->>C: plan()
+  C->>L: structured(PLANNER, QueryPlan)
+  L->>M: chat/completions
+  M-->>L: JSON
+  L-->>C: oggetto validato
+  A->>K: salva il run
+  P->>A: POST /fetch
+  A->>G: ricerche RSS
+  P->>A: POST /extract, /cluster
+  Note over P,A: pausa: il redattore approva
+  P->>A: POST /editor, /write, /personalize
+  P->>A: GET /render/{token}
+  A->>C: render_for() + personal_section()
+  </pre>
+  <p>La pagina guida i passaggi uno alla volta: ogni chiamata a Vercel deve chiudersi entro 5 minuti, e così nessuna li supera.</p>
+
+  <h2>Come non si rompe: <code>core/llm.py</code></h2>
+  <p>Tutte le chiamate al modello passano da una sola funzione, <code>structured()</code>. È il pezzo che rende affidabile l'output JSON.</p>
+  <div class="loop">
+    <div class="card"><b>1 · Schema nel prompt</b>Il prompt riceve lo schema JSON generato dal modello Pydantic e l'istruzione "rispondi solo JSON".</div>
+    <div class="card"><b>2 · Validazione</b>La risposta viene validata con Pydantic. Se manca un campo o un valore è fuori scala, fallisce.</div>
+    <div class="card"><b>3 · Correzione</b>Al modello si rimanda l'errore esatto ("manca il campo X") e gli si chiede il JSON corretto. È un solo nuovo tentativo.</div>
+    <div class="card"><b>4 · Fallback</b>Su OpenRouter il parametro <code>models</code> passa da solo a un altro modello gratuito se il primo è occupato; se falliscono tutti, si passa al gruppo successivo.</div>
+    <div class="card"><b>5 · Scadenza</b>Ogni passaggio ha 280 secondi in tutto. I tentativi si fermano prima, invece di far scadere la funzione su Vercel.</div>
+  </div>
+
+  <h2>I file</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>File</th><th>Cosa fa</th></tr></thead>
+    <tbody>
+      <tr><td><code>core/prompts.py</code></td><td>I cinque prompt: <code>PLANNER</code>, <code>EXTRACTOR</code>, <code>CLUSTERER</code>, <code>EDITOR</code>, <code>PERSONALIZER</code>.</td></tr>
+      <tr><td><code>core/models.py</code></td><td>Gli schemi Pydantic: la forma che ogni risposta del modello deve avere.</td></tr>
+      <tr><td><code>core/llm.py</code></td><td>Il client del modello: compatibile OpenAI, validazione, correzione, fallback, scadenza. Per passare da OpenRouter a Gemma cambia solo l'indirizzo.</td></tr>
+      <tr><td><code>core/pipeline.py</code></td><td>I passaggi della run, il punteggio, la selezione, il QA, i due circuiti di feedback, la sezione "Per te".</td></tr>
+      <tr><td><code>core/sources.py</code></td><td>Ricerca su Google News RSS, pulizia, doppioni, affidabilità di partenza delle fonti.</td></tr>
+      <tr><td><code>core/recipients.py</code></td><td>I tre lettori di esempio (Comune, CIO manifatturiero, brand di moda) con il loro link personale.</td></tr>
+      <tr><td><code>core/store.py</code></td><td>Dove si salva: Upstash Redis online, SQLite in locale.</td></tr>
+      <tr><td><code>core/config.py</code></td><td>Impostazioni lette dalle variabili d'ambiente: chiave, codici, tetti, timeout.</td></tr>
+      <tr><td><code>api/index.py</code></td><td>L'API FastAPI: un endpoint per passaggio, controllo del codice e delle quote, pannello, feedback, registro invii.</td></tr>
+      <tr><td><code>public/index.html</code>, <code>app.js</code>, <code>style.css</code></td><td>La pagina in 4 passi. <code>app.js</code> guida la run live e disegna mail, confronto e tabelle.</td></tr>
+      <tr><td><code>public/pannello.html</code></td><td>Il pannello personale del lettore: interessi, voti, conferma dei feedback.</td></tr>
+      <tr><td><code>public/replay.json</code></td><td>L'uscita già generata (golden run) che la modalità Replay mostra.</td></tr>
+      <tr><td><code>scripts/make_replay.py</code></td><td>Esegue tutta la run in locale (con Gemma su server proprio) e salva <code>replay.json</code>.</td></tr>
+      <tr><td><code>tests/fake_run.py</code></td><td>Prova tutto il flusso senza modello, con risposte finte: serve a verificare che i pezzi si incastrino.</td></tr>
+      <tr><td><code>vercel.json</code>, <code>.vercelignore</code></td><td>Configurazione del deploy: durata massima di 300 secondi, file esclusi (le chiavi non vengono mai caricate).</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Cosa viene salvato</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Chiave in Upstash</th><th>Contenuto</th></tr></thead>
+    <tbody>
+      <tr><td><code>run:{id}</code></td><td>Una run live: query, articoli, schede, temi, approvazioni, newsletter, varianti, log dei tentativi.</td></tr>
+      <tr><td><code>fb:{token}</code></td><td>I voti di un lettore su notizie e fonti.</td></tr>
+      <tr><td><code>prefs:{token}</code></td><td>Gli interessi modificati dal pannello.</td></tr>
+      <tr><td><code>deliveries</code></td><td>Chi ha ricevuto cosa (invio simulato).</td></tr>
+      <tr><td><code>usage:{codice}:{giorno}</code></td><td>Le chiamate usate oggi da un codice; si azzera ogni giorno alle 2 ora italiana.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>I due circuiti di feedback</h2>
+  <div class="loop">
+    <div class="card"><b>Per lettore</b>Interessi e 👎 cambiano solo la sua sezione "Per te". Funzione <code>personal_section()</code>.</div>
+    <div class="card"><b>Per tutti</b>I voti sulle fonti di tutti i lettori correggono l'affidabilità, ma solo da 2 voti netti in su e al massimo di ±0,3. Funzione <code>source_trust()</code>, usata dalla ricerca della run successiva.</div>
+  </div>
+
+  <footer>Mappa scritta sul codice al commit dell'ultima versione pubblicata, 27/09/2026.</footer>
+</div>
+
+</body>
+</html>

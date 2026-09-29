@@ -1,0 +1,28 @@
+flowchart LR
+  subgraph SRC["Data Sources"]
+    S1["Fonti autorevoli<br/>(prior di affidabilità)<br/>UE · AgID · ACN · Garante · testate"]
+    S2["Ricerca agentica<br/>query generate dall'LLM"]
+  end
+  subgraph SEL["Selection Engine"]
+    P1["Pulizia deterministica<br/>finestra 14 gg · dedup"]
+    P2["Estrazione strutturata<br/>tema · tipo · rilevanza · hype · tag"]
+    P3["Temi + punteggio<br/>rilevanza · affidabilità · fonti indip. − hype"]
+    P4["Vincolo di diversità<br/>5–7 temi, max 2 per tipo"]
+  end
+  DB[("Pool notizie<br/>+ storico<br/>(futura RAG)")]
+  subgraph REV["Review Layer"]
+    ED["👤 Redattore dell'editore<br/>approva temi e pool,<br/>non le singole mail"]
+  end
+  subgraph GEN["Generation Engine"]
+    G1["Redattore LLM<br/>(system prompt A.2)<br/>fonti collegate dal codice"]
+    G2["Varianti per segmento (A.3)<br/>settore × maturità × dimensione"]
+    G3["Sezione personalizzata<br/>(codice, dal pool approvato)"]
+  end
+  QA["QA automatico<br/>fonti verificate · lunghezza · diversità<br/>(errore → torna al redattore)"]
+  DEL["Delivery (ESP)<br/>+ registro chi ha ricevuto cosa"]
+  KB["KB dell'editore<br/>report · eventi"]
+  S1 --> P1; S2 --> P1; P1 --> P2 --> P3 --> P4
+  P2 --> DB; P4 --> ED; DB --> ED
+  ED --> G1 --> G2 --> QA --> DEL
+  DB --> G3 --> QA
+  KB -. "slot 'Dall editore'" .-> DEL

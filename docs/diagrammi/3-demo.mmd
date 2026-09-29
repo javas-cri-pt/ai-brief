@@ -1,0 +1,13 @@
+flowchart LR
+  U["Browser<br/>(lettori / redazione)"] -->|"Replay"| ST["public/replay.json<br/>golden run congelato"]
+  U -->|"Live + codice di accesso"| API
+  subgraph VERCEL["Vercel"]
+    FE["Frontend statico"]
+    API["Funzione Python (FastAPI)<br/>un endpoint per passaggio<br/>verifica codice · tetti giornalieri"]
+  end
+  U --- FE
+  API --> KV[("Upstash Redis<br/>run · feedback · registro · quote")]
+  API --> GN["Google News RSS<br/>(ricerca demo)"]
+  API -->|"OpenAI-compatible<br/>fallback nativo tra modelli free"| OR["OpenRouter<br/>gemma-4-31b-it:free → altri free"]
+  DEV["💻 Portatile (test)<br/>scripts/make_replay.py"] -->|"stesso client, altro base_url"| SH["Modello self-hosted<br/>(Gemma, vLLM)"]
+  DEV -->|"genera"| ST

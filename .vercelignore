@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+data/
+tests/
+.venv/
+__pycache__/
+*.pyc

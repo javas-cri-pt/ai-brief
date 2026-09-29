@@ -1,0 +1,1842 @@
+{
+ "id": "replay",
+ "creato": "2026-09-27T17:59:13.659587+00:00",
+ "log": [
+  {
+   "passo": "pianificazione",
+   "model": "gemma-4-31b-it (self-hosted, vLLM)",
+   "attempts": [
+    "gemma-4-31b-it (self-hosted, vLLM): ok (tentativo 1)"
+   ]
+  },
+  {
+   "passo": "recupero",
+   "model": "— (codice)",
+   "attempts": [
+    "40 articoli dopo pulizia e dedup"
+   ]
+  },
+  {
+   "passo": "estrazione lotto 1",
+   "model": "gemma-4-31b-it (self-hosted, vLLM)",
+   "attempts": [
+    "gemma-4-31b-it (self-hosted, vLLM): ok (tentativo 1)"
+   ]
+  },
+  {
+   "passo": "estrazione lotto 2",
+   "model": "gemma-4-31b-it (self-hosted, vLLM)",
+   "attempts": [
+    "gemma-4-31b-it (self-hosted, vLLM): ok (tentativo 1)"
+   ]
+  },
+  {
+   "passo": "estrazione lotto 3",
+   "model": "gemma-4-31b-it (self-hosted, vLLM)",
+   "attempts": [
+    "gemma-4-31b-it (self-hosted, vLLM): ok (tentativo 1)"
+   ]
+  },
+  {
+   "passo": "estrazione lotto 4",
+   "model": "gemma-4-31b-it (self-hosted, vLLM)",
+   "attempts": [
+    "gemma-4-31b-it (self-hosted, vLLM): ok (tentativo 1)"
+   ]
+  },
+  {
+   "passo": "estrazione lotto 5",
+   "model": "gemma-4-31b-it (self-hosted, vLLM)",
+   "attempts": [
+    "gemma-4-31b-it (self-hosted, vLLM): ok (tentativo 1)"
+   ]
+  },
+  {
+   "passo": "raggruppamento e selezione",
+   "model": "gemma-4-31b-it (self-hosted, vLLM)",
+   "attempts": [
+    "gemma-4-31b-it (self-hosted, vLLM): ok (tentativo 1)"
+   ]
+  },
+  {
+   "passo": "redazione",
+   "model": "gemma-4-31b-it (self-hosted, vLLM)",
+   "attempts": [
+    "gemma-4-31b-it (self-hosted, vLLM): JSON non valido (tentativo 1)",
+    "gemma-4-31b-it (self-hosted, vLLM): ok (tentativo 2)",
+    "QA lunghezza: 1336 parole → correzione → 1868 parole"
+   ]
+  },
+  {
+   "passo": "variante pubblica amministrazione",
+   "model": "gemma-4-31b-it (self-hosted, vLLM)",
+   "attempts": [
+    "gemma-4-31b-it (self-hosted, vLLM): ok (tentativo 1)"
+   ]
+  },
+  {
+   "passo": "variante manifattura",
+   "model": "gemma-4-31b-it (self-hosted, vLLM)",
+   "attempts": [
+    "gemma-4-31b-it (self-hosted, vLLM): ok (tentativo 1)"
+   ]
+  },
+  {
+   "passo": "variante moda e retail",
+   "model": "gemma-4-31b-it (self-hosted, vLLM)",
+   "attempts": [
+    "gemma-4-31b-it (self-hosted, vLLM): ok (tentativo 1)"
+   ]
+  }
+ ],
+ "queries": [
+  {
+   "query": "attuazione AI Act imprese",
+   "tema": "regolazione",
+   "lingua": "it"
+  },
+  {
+   "query": "IA pubblica amministrazione italiana",
+   "tema": "casi_uso",
+   "lingua": "it"
+  },
+  {
+   "query": "investimenti infrastrutture calcolo IA",
+   "tema": "investimenti",
+   "lingua": "it"
+  },
+  {
+   "query": "formazione competenze IA aziendali",
+   "tema": "competenze",
+   "lingua": "it"
+  },
+  {
+   "query": "AI governance framework enterprise",
+   "tema": "governance",
+   "lingua": "en"
+  },
+  {
+   "query": "generative AI ROI case studies",
+   "tema": "casi_uso",
+   "lingua": "en"
+  },
+  {
+   "query": "AI strategy digital transformation",
+   "tema": "strategia",
+   "lingua": "en"
+  },
+  {
+   "query": "small language models efficiency",
+   "tema": "tecnologia",
+   "lingua": "en"
+  },
+  {
+   "query": "AI regulatory compliance costs",
+   "tema": "regolazione",
+   "lingua": "en"
+  },
+  {
+   "query": "AI talent gap industry",
+   "tema": "competenze",
+   "lingua": "en"
+  },
+  {
+   "query": "procurement intelligenza artificiale",
+   "tema": "casi_uso",
+   "lingua": "it",
+   "origine": "interessi lettori"
+  },
+  {
+   "query": "ai act intelligenza artificiale",
+   "tema": "casi_uso",
+   "lingua": "it",
+   "origine": "interessi lettori"
+  },
+  {
+   "query": "servizi ai cittadini intelligenza artificiale",
+   "tema": "casi_uso",
+   "lingua": "it",
+   "origine": "interessi lettori"
+  },
+  {
+   "query": "logistica intelligenza artificiale",
+   "tema": "casi_uso",
+   "lingua": "it",
+   "origine": "interessi lettori"
+  },
+  {
+   "query": "manutenzione predittiva intelligenza artificiale",
+   "tema": "casi_uso",
+   "lingua": "it",
+   "origine": "interessi lettori"
+  },
+  {
+   "query": "supply chain intelligenza artificiale",
+   "tema": "casi_uso",
+   "lingua": "it",
+   "origine": "interessi lettori"
+  },
+  {
+   "query": "moda intelligenza artificiale",
+   "tema": "casi_uso",
+   "lingua": "it",
+   "origine": "interessi lettori"
+  },
+  {
+   "query": "retail intelligenza artificiale",
+   "tema": "casi_uso",
+   "lingua": "it",
+   "origine": "interessi lettori"
+  }
+ ],
+ "articles": [
+  {
+   "titolo": "AI Board, focus su AI Act e cybersecurity",
+   "testata": "The Watcher Post",
+   "dominio": "thewatcherpost.it",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNFdrU1dvNWlYNE50Qk4xNGIyRFRhaHVVam9HUzdvUFREYWV0UXRYNGJYRUZRNGhfTkJFU0NoYWZacXRwOGRnV3VTSm5vckp6Y3pMLTZrWk5JWHZ0WVJ5WHpDaGJmRXJhQ0tIZkpIVlpyLVU0akFWVlZoQWhWLTg5bGhVdy1CR2dJZktjNzlSLXdtZWFHV21CbWVrSQ?oc=5",
+   "data": "2026-09-19T07:00:00+00:00",
+   "estratto": "AI Board, focus su AI Act e cybersecurity The Watcher Post",
+   "query": "attuazione AI Act imprese",
+   "id": "a9d9abe2",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Auxil.IA, l'intelligenza artificiale a servizio della pubblica amministrazione",
+   "testata": "regione.piemonte.it",
+   "dominio": "regione.piemonte.it",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaHl0WnRzR3BxSU1VNi1KS21faEFYamh2LUlEVkV2aFVvNU8tbXNfUDYwZ0plQjgza1JqWWU0UVo4N3Bya203SDlHS1lJbFlzNkpnWUhuOWVUOS1fdDBUclBianF1N1QzSXRDVk5oTkZLNGQtWDlGVTFUWGVxRnI0MU9aWno0cm1JTWlnUEpndE0yM1lncTNRWE0tNTN5ZXNneEt2eVZOMmxONDREZ2N2NlpfWkVyZ1gxeWtTemRfSVUyQzdl?oc=5",
+   "data": "2026-09-17T07:00:00+00:00",
+   "estratto": "Auxil.IA, l'intelligenza artificiale a servizio della pubblica amministrazione regione.piemonte.it",
+   "query": "IA pubblica amministrazione italiana",
+   "id": "ab27be37",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "SIMEST: da oggi operativa la nuova Sezione “Investimenti IA & Quantum Computing” del Fondo 384/81",
+   "testata": "Fira – Finanziaria Regionale Abruzzese",
+   "dominio": "fira.it",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZFo5SXdlT1hnbWxXYUdmdHBxdDVDWWJpNGtQLU9wTVdhdEszOE53amtORXFfSnYwRE8xZ3RRajFlMjREaWFaNlV1dVBfb3JDeEhqdkZ1QkdYMGpJMGQyaFV3QkhNZWwwWm5md0NiRC10Wk1JYlVjNUhpcDVqR3Z4NWgwclJvbm93N0VPNDBqNGhBb1VUaEZTUWMwZjdaWVVGVThISGhGbl93S3ZsOVpXeUZuWVpaYUFJS1R5dzFTdldvcTRiOWlr?oc=5",
+   "data": "2026-09-24T14:38:35+00:00",
+   "estratto": "SIMEST: da oggi operativa la nuova Sezione “Investimenti IA & Quantum Computing” del Fondo 384/81 Fira – Finanziaria Regionale Abruzzese",
+   "query": "investimenti infrastrutture calcolo IA",
+   "id": "ae94b66b",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Due anni di OpenAI Academy",
+   "testata": "OpenAI",
+   "dominio": "openai.com",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE01QW5acG5CSDJWU1AwX0hZN3B4VjBnRFI2RElQRDVtUjJfRWRwZkttZXFRbDdwQnJSZDRDWmd4VFE4bzRGVFFwVTZleTNOeVBZcTlGbmdLVWpUSUFkeEFDSFo5ekJSU1p6WDdJ?oc=5",
+   "data": "2026-09-23T23:19:34+00:00",
+   "estratto": "Due anni di OpenAI Academy OpenAI",
+   "query": "formazione competenze IA aziendali",
+   "id": "a04f6fef",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Five Bills, One Governance Framework: Enterprise Action Items for Health Care Use of AI",
+   "testata": "Quarles & Brady LLP",
+   "dominio": "quarles.com",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTk0tbGxaaC10TlY2SXI5YmNvenNWd3FDZ0NCeUxJNkZ5NlNobXROdHdTYlIySlVXMzhQNE1FZm5CWm1qNm5GSGU0cUJCcGdzaFZLWTQ3VmRBYS1XUGtsUEJBR1NrbjRxOUM3aW5QY0VrTTNBcm5GMm1SMU1HQ3Y0emVLN21Hbk4taXZmeWJNX0wtd01BLUwxOWFvSW04OXY3OGdRSlRUS2FmbHRyOXhUX0ZlMlUzOUk5ZC1iMUJXdGo3Q2t0ZUU5RXRPYw?oc=5",
+   "data": "2026-09-22T19:01:41+00:00",
+   "estratto": "Five Bills, One Governance Framework: Enterprise Action Items for Health Care Use of AI Quarles & Brady LLP",
+   "query": "AI governance framework enterprise",
+   "id": "a5376a43",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "AI Is Changing the Business School Case Study",
+   "testata": "Bloomberg.com",
+   "dominio": "bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRmZyYVAzWUlTbHJQRXBaa2J3UXlCVHNIbTY5S2FZcFJ3WHc2OGtieVVwanllY0V1N2t0SDhQRjB4SnZPOHB0aGRVaFJid1RjNnBCZGItRXg4YW1SN0tTcEtFMUQ2b1RLSmx2MkwtSEF4M05veUpRY3pwcVQ1RElPYWprbnh3SXZHaWVXeXVxeFhtanQ3d281SE1yUlRhSWx3WmFCOFQ3Z0ptN0QxM1pWRzJYV2NUY0E?oc=5",
+   "data": "2026-09-22T11:00:07+00:00",
+   "estratto": "AI Is Changing the Business School Case Study Bloomberg.com",
+   "query": "generative AI ROI case studies",
+   "id": "ab0667ec",
+   "affidabilita": 0.85
+  },
+  {
+   "titolo": "Compass for Governance of AI & Digital Transformation in Education",
+   "testata": "coe.int",
+   "dominio": "coe.int",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQ29KeE1ERWlqblN6M2ZLTXRrMTByMmhxVVZsMXRyb3ozd1Q2cHhnNDFmOVc2QXEyNFgzSUFwMTBycXBublk4UW0zSnlDOGpNbGxHQUNSSHVHWmUzNW42ekhmV1BOZmZEeTEzeDFKRE01YlBmeDRMQW83Q1VYUmRpcEJPZW1zOG9oY0hpNEFfOVhMM3hxVld0X0IydGFsdzZsS08wN1Fn?oc=5",
+   "data": "2026-09-24T17:10:35+00:00",
+   "estratto": "Compass for Governance of AI & Digital Transformation in Education coe.int",
+   "query": "AI strategy digital transformation",
+   "id": "a0a9a11b",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "When Small Language Models Are the Right Fit for Federal AI",
+   "testata": "FedTech Magazine",
+   "dominio": "fedtechmagazine.com",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTEtkbjdVbElCd3hWTE5Yc3k5dmtmcWpuZlhHaWkwUC1tVmdmOGVnZVVjQkI1eFJtTmRnRmY2M2ZBdFY4N1FHMWRreXEzTndIcng2Y09PRHY0bi14MTh1cUFkQjFTNGROTUxaU3g2YVZRMzNFVVZ5ZDNsaUkwTUhWdG40YWJNTGtPLWNfN3AxaDVpVUdZSkpMWEJRMA?oc=5",
+   "data": "2026-09-25T16:14:03+00:00",
+   "estratto": "When Small Language Models Are the Right Fit for Federal AI FedTech Magazine",
+   "query": "small language models efficiency",
+   "id": "a5db133b",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Accelerate AI compliance with Regulatory Horizon Scanning",
+   "testata": "ibm.com",
+   "dominio": "ibm.com",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNlhPbHBIUGhOaEhaa0RDemJ6ZjAxbmxuLXZQWVE4dk5Cb3dZSDZUX3VGczhJanU5NnFEVkxxMk1BNWJBbVFrVW9yQnFzLV9uYjVNdHNqemtseG00TE5GQnBxa3JrMlNzTlJIb21FdTVqS05FUmJ4Y0ZIOU9ZeElWb25jS09tRkpVLWhGTFN1aHhtazMtNnMwS0VBRQ?oc=5",
+   "data": "2026-09-16T14:20:44+00:00",
+   "estratto": "Accelerate AI compliance with Regulatory Horizon Scanning ibm.com",
+   "query": "AI regulatory compliance costs",
+   "id": "a74271c3",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Facing an AI skills gap? A skills-first training approach can help",
+   "testata": "cio.com",
+   "dominio": "cio.com",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNR2hfMzdmNWZCbF9xN0hvVUJobFR5MXlGc3dXTG1Cb1ZqOU5XUWtvNDhHZE50c1ptZ3M3cUVsN2J5NW85T1ZrcXRHVWVWeDdpSFRTUTBmc09paEFadjQ3RldTNnMwUzRDa3UxRlQ0c0pkLTUxbU1KV3RDRnZGbGY4RlFqTm9VTktPTXdlczhMMUZPSFFfT3liTA?oc=5",
+   "data": "2026-09-21T10:06:16+00:00",
+   "estratto": "Facing an AI skills gap? A skills-first training approach can help cio.com",
+   "query": "AI talent gap industry",
+   "id": "a3312fb6",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Il procurement sarà AI-native, ma aziende e contratti sono pronti?",
+   "testata": "AI4Business",
+   "dominio": "ai4business.it",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbnVDUHRNdFo5dHV3dkp5dGJxYWlGdzdSVHdVNE1zbUZBY0o3eDJKa25FN0t2U3p0ZFhsMXctdkRqOU9KcWZvNHZURzV4Zk1ad01xRkhoQ3NTQnBzUGZ2S1NOdVJpc0VqaHA1Y0d4VEkxczNCeFcxSWJ0dzJiSGJFaDgxdHllLTRwSVhINkZ5YXBybm1xYUdhTE1rQTBSSFNNUU9aNHpiSGVWbWhJd3ZLYk4ycTRqMmN4Z1hQYUZmOA?oc=5",
+   "data": "2026-09-21T15:11:58+00:00",
+   "estratto": "Il procurement sarà AI-native, ma aziende e contratti sono pronti? AI4Business",
+   "query": "procurement intelligenza artificiale",
+   "id": "af826d27",
+   "affidabilita": 0.7
+  },
+  {
+   "titolo": "Intelligenza artificiale a scuola: usi pratici, limiti e regole dell'AI Act",
+   "testata": "voglioinsegnare.it",
+   "dominio": "voglioinsegnare.it",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdHFudG5neUhIM0JCWEZMTVVjMEVQOVZXd0xQaGtIdkxILUE0Qks3TGpkTTFfUVRETnRFc01Ud0hrUkh4S2pfWGZnNFN6ZTdTXzQ1MXRwTDh2THZIVjFDWFh2V05BRW5pZ3BxWUJiYkFONEYwUG9DMWw0UTRhbHJPY3NhTXpEMTJNU1NPUjNwXzRjSTcyM3otVFVrUFplTlNLbWJ4MV9ZVnc3Q2ZLTm1xUTJlQQ?oc=5",
+   "data": "2026-09-25T12:43:35+00:00",
+   "estratto": "Intelligenza artificiale a scuola: usi pratici, limiti e regole dell'AI Act voglioinsegnare.it",
+   "query": "ai act intelligenza artificiale",
+   "id": "a1bbc833",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Intelligenza artificiale e logistica, Dari: \"La persona resterà centrale\"",
+   "testata": "Messaggero Marittimo",
+   "dominio": "messaggeromarittimo.it",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTUxRMVJzSXVQM2U4ZmhDSGJyaWtIS215ZVFzNzAyaHM1MU5zSlVQdDEwSVF3UFIwcFRGUnpXeFBLQ21ZRFZyN0ptTXBZVzFmZzczcnJLckF2N1pfRXpYQ2VpRTN6VVIwb3pwTGIyVGtjOExJYVozNi1hVmJoTnlVX3hsODlrX3ZnRHJDWVowWjBzOUJnejlsVXZRcmNtOUE1Y1VGWDg0TnU?oc=5",
+   "data": "2026-09-23T14:38:51+00:00",
+   "estratto": "Intelligenza artificiale e logistica, Dari: \"La persona resterà centrale\" Messaggero Marittimo",
+   "query": "logistica intelligenza artificiale",
+   "id": "aded2190",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Non solo IA sovrana. Igor Bailo: le nuove strategie dì Engineering su Intelligenza Artificiale e tech industriale",
+   "testata": "Industria Italiana",
+   "dominio": "industriaitaliana.it",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOTEJFOG15THprZTdFZE0tZTRaZ3A0bkhzRi0xMVNqNjJJVUJqR2h1STV0VUpWQmVleTVJT0FGOV8tYUhXS281WHRIVzdMY2xlVVNENG8tYVFqU2N6clJXYjBMa3NfbkR1TG1oSGFCU0JRWTl6YlFKTkJOU2EzQWJQVVpoSWRvWW5oalNYTHMxdlJsMi1iSno2eHJLemhKbS1FVl9RUXJhTU11U1VFWVZqWHQ3RUV6b1hTT3pfRFBGdHg1ODNXcm1LQ1MwN243Z3kxb1UxNkZXRGRoSEx2VWc?oc=5",
+   "data": "2026-09-23T10:32:25+00:00",
+   "estratto": "Non solo IA sovrana. Igor Bailo: le nuove strategie dì Engineering su Intelligenza Artificiale e tech industriale Industria Italiana",
+   "query": "manutenzione predittiva intelligenza artificiale",
+   "id": "a47a8324",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Supply chain, più pianificazione delle imprese ma poco uso dell’intelligenza artificiale",
+   "testata": "La Stampa",
+   "dominio": "lastampa.it",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUWxZRnBsTmZQdHlCR3FwZkwzMm9UN1ZIazlTdmk5ekFPM1ZGRnBqMEM1YzFvRnExVmplR3dVRW1SaFdacWNQR1p4OVc5M1Y4azJlWmE3RzByRmtDakU1NWYyUmp3al96eGV5emR4Y1VjNkpyamVJbDlscEJIdWppbmhhNE5uSE1lODV4YkxrLVBEZXk3SmVrWGZiT0lyM3ZoaHhDamwxaHUzcUh2ajlKR3Z6cDYyMDVsbXI00gHAAUFVX3lxTE9aWE1Ta18xSW5tcFA4NXlOMUJxdGw0UlNVSS1hVVgzQUt3Q2JRZDVXdG9tVDNRbjNnMjFfMnJMOUtCYnZ5SVYwSHl6NVJhaWltTm9wcEd5VS1QdTgxSGJDVWJsV0pHMV95Snk1aWpOZzJTUFlmOFZ0WGpjQ0p0Q3Z2TS1oTE10Q1pTbF9QMkhsdFhudFg3S3dLdjFZNU04b2RhaUZCYVYxWVY0a1NYYVpianpPRl94bHQ4cWc1UHNPYQ?oc=5",
+   "data": "2026-09-22T13:36:00+00:00",
+   "estratto": "Supply chain, più pianificazione delle imprese ma poco uso dell’intelligenza artificiale La Stampa",
+   "query": "supply chain intelligenza artificiale",
+   "id": "a7bcabf4",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "L'intelligenza artificiale nel settore moda & beauty in Italia",
+   "testata": "The Innovation Group",
+   "dominio": "ictbusiness.it",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdWI0RXdjd3pRVkNsbXNGSFBIMnFiT2dkc1NVcHZZTGNKVE1XTEp2WE1Lc1dWTFdZQkRIZFd1b252NjltZG1VZFFXTGg1WGNJZFFrU0ZFX0RKeG9FVU5zbk9EWjdNZmpiOFhCdDJJaWxTUDhwUnNudEl6VjVJcU1wdU92V1JIdTlsY2xfR3FRcGE4VWZhbHg3MTRCVkhya2V3TzhDSEZSY0hUMlEwekVpLQ?oc=5",
+   "data": "2026-09-18T07:32:07+00:00",
+   "estratto": "L'intelligenza artificiale nel settore moda & beauty in Italia The Innovation Group",
+   "query": "moda intelligenza artificiale",
+   "id": "a452810a",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "AI nel retail, l’utilizzo sale dal 39% al 65% in un anno",
+   "testata": "foodweb.it",
+   "dominio": "foodweb.it",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaTI1QUtVT1gwaGlwUzZYbW5RdWxDV3puajEzY3FqdDJEY3dqeEV3elVySnNTaXM5cVNmZGJUNVRDb3llQWtnY0s0T3FGZzV4TWdwdTdjSnF4QWdieWZqTGp5Y0RWTTd4SnRZNGFuZ3B6U2pBZnR5VnVxbXFBa2daaEx5NE1PemRuU1FyTQ?oc=5",
+   "data": "2026-09-22T08:24:00+00:00",
+   "estratto": "AI nel retail, l’utilizzo sale dal 39% al 65% in un anno foodweb.it",
+   "query": "retail intelligenza artificiale",
+   "id": "a11fbf9a",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Intelligenza artificiale, decreto in Gazzetta: cosa cambia dal 30 settembre",
+   "testata": "GiuriCivile.it",
+   "dominio": "giuricivile.it",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTk5YODRIMVplVERIbFlnZWZSVGx1RU42ZElkR3AtYXJqWExJcVFnZEs1eExPZ3d0RWF4c2p0RzQ5dHllNzFiMjZjb1dIc21JTWdBYTZaQUxSdFdYR05XOTBGUy1ObGN5OF92WGNfQlZkb2N6X1hqOEhoZ1Q5cUc4dmtCNDdZNGhUU3FKeFJsSDZ5MVZUXzJvSEhhVk9ndw?oc=5",
+   "data": "2026-09-17T07:00:00+00:00",
+   "estratto": "Intelligenza artificiale, decreto in Gazzetta: cosa cambia dal 30 settembre GiuriCivile.it",
+   "query": "attuazione AI Act imprese",
+   "id": "aba604c7",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Bip, la pubblica amministrazione tra sovranità europea e intelligenza artificiale",
+   "testata": "Il Sole 24 ORE",
+   "dominio": "stream24.ilsole24ore.com",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQOWJtcWhvOS1wQmoySE5JeG5mb05USEpQLXFybHlTNEpPdDhtdUFSZU5ZV0Q0cFk5dnpmNkJydlJwbHd4cnRMRkR6akw0aEFvcHdoT1lJY3lQTExlLXJJaC1vdk82anRYQVdzYXYydG5RVHZQUk9WbU1kQVNLeGNrblJ5Q1hmdFhQRDZSMGFKRDZSYnB5cTBwV3I4cmI4emtMc25SXy1mV1NGM2s5NW5Yby1USFlSNkN6UUswLXdnTUw0T180QU9fRE93?oc=5",
+   "data": "2026-09-23T18:44:15+00:00",
+   "estratto": "Bip, la pubblica amministrazione tra sovranità europea e intelligenza artificiale Il Sole 24 ORE",
+   "query": "IA pubblica amministrazione italiana",
+   "id": "a1785133",
+   "affidabilita": 0.85
+  },
+  {
+   "titolo": "I costi del futuro | L’IA ha bisogno di energia e di infrastrutture sostenibili",
+   "testata": "Linkiesta.it",
+   "dominio": "linkiesta.it",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX0trX05OLTNzN2RhS3NLVjMwQlZkTFhmWUNpaGZDV0xaMkdXSUJDV25rdUFiRVNsZnhpSU5RMkhTemZJblhhbGJJa3NHcGp0bWJxX1dRTW1fYTdmdUdtNWo0dlYwQXoxbFRNTy02MzZrOGt0MExfU01FWkswRVhyZG5Jd3dHVWtEcnVNNWYtVUhSbnRXNVE?oc=5",
+   "data": "2026-09-19T02:46:36+00:00",
+   "estratto": "I costi del futuro | L’IA ha bisogno di energia e di infrastrutture sostenibili Linkiesta.it",
+   "query": "investimenti infrastrutture calcolo IA",
+   "id": "a981fe20",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Formazione AI e Bandi 2026: Come Finanziare l’Upskilling Aziendale sul Digitale",
+   "testata": "incentivimpresa.it",
+   "dominio": "incentivimpresa.it",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNdmR0UHU5ak5COVdTMU1WQ0ZIT2tWSHowZUpaVXJJaVo0YjhURGF2X1FmdnpDemZObkxYRy1aVGh0OUlNcDFXR2psME01X2kxQVN1WjFMcXJXNl9YQ3ZIYnItZ1VHcVk4RWdNbmJsd0ZZaHAtc3FRUGZRMnBrekNzYzFLTQ?oc=5",
+   "data": "2026-09-19T07:00:00+00:00",
+   "estratto": "Formazione AI e Bandi 2026: Come Finanziare l’Upskilling Aziendale sul Digitale incentivimpresa.it",
+   "query": "formazione competenze IA aziendali",
+   "id": "add36c43",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Building Trusted Enterprise AI: Why Governance Matters More Than Algorithms",
+   "testata": "AFCEA International",
+   "dominio": "afcea.org",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYWxZS183VG1wZXlPb0poNmFIOXVaQzJJOXh3RjdsbEdtZ3dEWGhCWjRFb0d4UmxKQjlPb1NuNGZ4U3daUHA5Zzl0VnNCNkdJTzQwb2tfX3pXS3pmVUFTNlQ5a0Vqby1DRWJmd0x0UHdOa0h6cEwzUk9mMm43amg0QXNsLVZKWVVfaExVdEpvbnB5VURnbFZKT1dkTnppbFZ4bzdPaGVsRW54UmJqZUI3YlRpaXdTdw?oc=5",
+   "data": "2026-09-21T12:00:00+00:00",
+   "estratto": "Building Trusted Enterprise AI: Why Governance Matters More Than Algorithms AFCEA International",
+   "query": "AI governance framework enterprise",
+   "id": "aa30f8f9",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "McKinsey Technology Trends Outlook 2026",
+   "testata": "McKinsey & Company",
+   "dominio": "mckinsey.com",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOS0wzb1RmNmZPeVB4QjdSZTVmcmxMVUwyT2pSYVliQVQwZ25mUFpoWlFXdGFpWnNJLVdmMncwc0twU2pxSmplU2k0WGFuRWlIT1BFQ1FzWVlCbWc2MWpzamF0LU51NVBSNURBeWhUN0VxYlA1VjMzUk16eHlBQlJ2R3F2TXAzaW9SczJId2hn?oc=5",
+   "data": "2026-09-15T07:00:00+00:00",
+   "estratto": "McKinsey Technology Trends Outlook 2026 McKinsey & Company",
+   "query": "generative AI ROI case studies",
+   "id": "a17c6444",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Digital transformation fails without this culture shift",
+   "testata": "cio.com",
+   "dominio": "cio.com",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQ2U4Qjhlcml5UEI2RE92SVNVWkNVdXJUMGF6el9RMU5uQ0tfaVNPZl94NE41cnJFTVl0UklrUVRZUzdyWDBFbGxfRmp3SWJkTjVIeFpvYUhRc0VyeTBiZnV6Zm5KQi1LSjU4ek9pZmpsRDNOVlc1ZTA3aHBBVjRqNWZuaHpCTjJTTGphbkZqMXZ6UktsYWZMQVNTeGc?oc=5",
+   "data": "2026-09-17T07:00:00+00:00",
+   "estratto": "Digital transformation fails without this culture shift cio.com",
+   "query": "AI strategy digital transformation",
+   "id": "a8792e4c",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Can AI reason without words? A small model puts the idea to the test",
+   "testata": "Science News",
+   "dominio": "sciencenews.org",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9tTFRPWXo0QnVqUnd1YkUzZTNEYkppM1JnME9CZUMxdEVUek1aTkVWNkFZdTdDVUE2cjlqOVNsVXZOeFdaN0V1a09YeVhQMlR2cFotQkVUdEVWdF94cTR2ZW5MOEZqZUpscUtOTjRoMU5DLVlubGYyajlVTE1adw?oc=5",
+   "data": "2026-09-22T16:00:00+00:00",
+   "estratto": "Can AI reason without words? A small model puts the idea to the test Science News",
+   "query": "small language models efficiency",
+   "id": "a7f29c8b",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "The EU AI Act’s Costs to American Innovation | Blogs | Sep 22, 2026",
+   "testata": "Information Technology and Innovation Foundation",
+   "dominio": "itif.org",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMFk4Y1VpM3I3V2hNOXhmVUdieUIyYzFvV1h6am1ZeUQxTUdtRFljNVdNakFaOTVmd0doNnVuZ21neXJoX0ZVTzFGVUw3aGhTeDBOOE9SR3h5V1lxc2RkcDQ5Zm04enl1UzVwMW0wd3NObXdHLXRJSFVoY1hHVUNKVnpqUjZUS2FaRGd2TGRB?oc=5",
+   "data": "2026-09-22T14:48:53+00:00",
+   "estratto": "The EU AI Act’s Costs to American Innovation | Blogs | Sep 22, 2026 Information Technology and Innovation Foundation",
+   "query": "AI regulatory compliance costs",
+   "id": "ae6c6292",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "What skills do employers want from young people entering the workforce in the age of AI?",
+   "testata": "The World Economic Forum",
+   "dominio": "weforum.org",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVBxMTk2aHhjWlJYbGJRTUdZOS1fRDZYYWIzYVZVMmtiUHIxamV3TlZPZVJhWnhwcjVvR012T1JLM3cyQTVLNHdDTEJ0d0JrQkhqTmZoZmxtSTVZS0pOOGhJRURqRTd5U0hIU2xsZWx2anBVZVB0WVBmdE5zd1BUVmVpQXItbVpmS3E1ZGp1MWlGZ2JlSTJQUkVGdEJOM0I4NWlldThQSW1BdmM?oc=5",
+   "data": "2026-09-16T07:00:00+00:00",
+   "estratto": "What skills do employers want from young people entering the workforce in the age of AI? The World Economic Forum",
+   "query": "AI talent gap industry",
+   "id": "a778c14f",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Intelligenza artificiale negli appalti pubblici: regole 2026, Bando ANAC e AI Act",
+   "testata": "biblus.acca.it",
+   "dominio": "biblus.acca.it",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWU9jQnlWX0pEMVYyRFM5dmM2VURZR0lnTUlGYUlVcFNURjhrMTFOYnJpV0hId1BjUl9wbkl2b0Y4aGI2Z0xaN3JGRWc4a0hHbVVRWEtDTjVLYV9QLXc0MHp6YTFzSHJXVUtnVzR0dS1jaGRrSzhEdGxJc2NKTi1tWE5iZ2RqUFo2QkRaT2NEM1NpdHFDNTloQ0dQVlBnN0g4YldzZ3B3?oc=5",
+   "data": "2026-09-18T07:00:00+00:00",
+   "estratto": "Intelligenza artificiale negli appalti pubblici: regole 2026, Bando ANAC e AI Act biblus.acca.it",
+   "query": "procurement intelligenza artificiale",
+   "id": "a8c5f983",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Intelligenza artificiale, dal 30 settembre nuove regole su responsabilità e riconoscimento facciale",
+   "testata": "Il Sole 24 ORE",
+   "dominio": "ntplusdiritto.ilsole24ore.com",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPd1FxR1QtM3lrd3puYkYza1BYVFJ2d1J2Q0xiRWxtaGVvMkhsX2RzNlR1ZlJnWHJjWDdYdE14ZERsRklfN051eGYzQ19FUVRUdGUtSHV5T3ZfdXZtcllzN0YwNEdJWUc2d3ZZZWRnWm91czdVQ3ltNzU5N2w5bXdrYi1TMlM4RmhZMDRqaW94RWhkdDBZT25LdENxaUxGNEU1MGN4cmxPeFU3Y2VWTzVVVHA0QVRzOWl4d1h6WFFKVjVReV84WXlaZVNsdzNuY2JNdk84aE9ub2RDZw?oc=5",
+   "data": "2026-09-16T07:00:00+00:00",
+   "estratto": "Intelligenza artificiale, dal 30 settembre nuove regole su responsabilità e riconoscimento facciale Il Sole 24 ORE",
+   "query": "ai act intelligenza artificiale",
+   "id": "af48ae12",
+   "affidabilita": 0.85
+  },
+  {
+   "titolo": "L’AI al servizio del cittadino e della Pubblica Amministrazione",
+   "testata": "bitmat.it",
+   "dominio": "bitmat.it",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVFY3aVZDdnRwcV9aRnJRRzNXNVhpN2k0UVAtMmE2MlZCU0VjdkFCZXhLeUY0b3c4WHZQZ0wzd2sxVW9HNGRPVmdHRjdIa1JGR1VhYWtrYVdvMHJmMmpRVndxN0dzVU9GaDk3NjFoaHVSMFJadDJiM19KN2ZjM1h1WWhPZnRLVkNBbXZMTlI2OWhWekRWMVVTaEJjU08tdjNJVGZrVlJzVmJhQWVhSUM4dnNvLThleVNTekJyMHpB?oc=5",
+   "data": "2026-09-18T05:00:15+00:00",
+   "estratto": "L’AI al servizio del cittadino e della Pubblica Amministrazione bitmat.it",
+   "query": "servizi ai cittadini intelligenza artificiale",
+   "id": "aeba61d6",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "AI nella logistica: dalla prevenzione alla predittività ma il nuovo rischio è cognitivo",
+   "testata": "TCE Magazine",
+   "dominio": "tcemagazine.it",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNb1lWWTlXR1lzREZra3FZcm1hVF9VUnI4UnZ0SThsTGpHdVMxeWVsalZtQkk2Z2x2TU5qU2o1Q25hOFdVRE9kSVZSdURzNHBSR2NCdEJfZ2p3VVlOYkFXS3Q3allTOVhDNFludHllNzZQNmpBRlZ4bkdmbUkzdS10MVc3ZmJnaGhMZEtoVEZscXhrcHdEa2RNbV9KSWFUMXBNZEMyUDhhYzVOUU9LeTV2MHdQUmZ0LVZ5dE14NQ?oc=5",
+   "data": "2026-09-22T06:00:05+00:00",
+   "estratto": "AI nella logistica: dalla prevenzione alla predittività ma il nuovo rischio è cognitivo TCE Magazine",
+   "query": "logistica intelligenza artificiale",
+   "id": "a4b31f58",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Hitachi Rail lancia Enhanced by HMAX™, IA e dati per manutenzione predittiva su tutti i nuovi treni dal 2027",
+   "testata": "esgnews.it",
+   "dominio": "esgnews.it",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQYk5CQlBYcmk5QkFIaTlIazNBWDJ5bC1uTVdYbFhoN1Z1MnJaLS1GYmh3V280bENuQzR1OEJqZWthaXloRXlqTzlGUTE5OTk0VkNrNDNuaUFfQ1RIM25YTE8zaXAyTllpTExZVEFkbzBVdFhIWUZBRGxRMG12VElzTGVsREJxdkxTbi1jVEZhS3pJZ2VMM2ZnNE9XUGFBUEhrZWxVbmcwRGprREI4am1TcmJzU0VLSFdxQllLYUN3OHd2cVBiUE1lemxibnVkRzQ?oc=5",
+   "data": "2026-09-22T09:34:22+00:00",
+   "estratto": "Hitachi Rail lancia Enhanced by HMAX™, IA e dati per manutenzione predittiva su tutti i nuovi treni dal 2027 esgnews.it",
+   "query": "manutenzione predittiva intelligenza artificiale",
+   "id": "a2e08be2",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "L’evoluzione della Supply Chain tra l’impatto dell’AI e la sfida delle competenze",
+   "testata": "Innovation Post",
+   "dominio": "innovationpost.it",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNd0hVR1BidWlCVHNuV1JNMllSaHVXeW43NjNCRy1ZSDhzTFRWQkwtZ29pUlN2TzdtcTJkRnI1eTBZZGxtM3dKUk1DdUpiSFRyWVFkZXI5Szg0M3dOZ2lLOU1VRElhS1A5ajR4cmJMN1pqU3NiYVgydW1PaHZMWHVsXzhVUFFvQld4OFZIRlRvYTNRX2sxY1h4bnBBV2J1dmYzQWMwcW5BYko4dUdWRGh1NUFYLU41eUh3TWI1Z0pES1RtMHF5T0RiNjkxb2doYml3ZDRsWGFaWmNCWms?oc=5",
+   "data": "2026-09-25T15:18:58+00:00",
+   "estratto": "L’evoluzione della Supply Chain tra l’impatto dell’AI e la sfida delle competenze Innovation Post",
+   "query": "supply chain intelligenza artificiale",
+   "id": "a65d0683",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "FASHION AI: come l’intelligenza artificiale sta trasformando il futuro della moda",
+   "testata": "Adriaeco",
+   "dominio": "adriaeco.eu",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTzM2cTJnMEpvX2xBaXlPM2VkU0J5ak94Q0dVNTRuZm51T0lvR2ZtYm5xT2tKUE4zNVFpOE56VFFoeVIzWXZnaGZhQi1pb01zekI2UTVqODdqTHllQWlqNWdQeVV2bUU4cmgwdHdUU2NVb2dNWHJlQkNrdmFiVlFLMUgwTVRuSzFCLXZ0dXl6WEw1cmVkNlJRRGJGdWNYV01qUXB5WlVHMDFRa193ZWFQNktwSWhpUQ?oc=5",
+   "data": "2026-09-18T00:00:53+00:00",
+   "estratto": "FASHION AI: come l’intelligenza artificiale sta trasformando il futuro della moda Adriaeco",
+   "query": "moda intelligenza artificiale",
+   "id": "a93322bb",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Bricoday Digital: la rivoluzione del Fai-da-Te tra Intelligenza Artificiale e Smart Retail",
+   "testata": "ANSA",
+   "dominio": "teleborsa.ansa.it",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUzZnUmZ0bW1VVUtsMnlJRXlyanE1SnRQZU9hdVdBVEFHeGplOVlVcm0wVmhDMGRabXl6R3RLTTJCcWJWOTFsbXNfX3F1NndRd2Q2dTgxamlxT3lqdFpST1FyNmFCdW1CdUFBTkcxbWlYazQ0X1NRbEEtdFBzU1RwRWhLYmZCSl80dUxaSEVla0RKM0xMdHVlZXQzLTBCQzJxV1hieVlscXppdm9zUUhVS1d2ZjhXNW93SGlDRlBaaTdiVWpTa0lvVVdkSXNWTEE2TXc?oc=5",
+   "data": "2026-09-24T06:05:36+00:00",
+   "estratto": "Bricoday Digital: la rivoluzione del Fai-da-Te tra Intelligenza Artificiale e Smart Retail ANSA",
+   "query": "retail intelligenza artificiale",
+   "id": "a1817dba",
+   "affidabilita": 0.8
+  },
+  {
+   "titolo": "Reati con l’IA, responsabilità e risarcimenti: cosa cambia con il decreto 160/2026",
+   "testata": "Diritto.it",
+   "dominio": "diritto.it",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13cndscGpSanpJYnNHcV9TZEZ1UWZBZEVyek1XZGFyQldmQmxob0wtVVBIV1M4MzdmWTRrSXVHb1kwMzhMY194UlhzZGVSdUoyVDhWRXZZalJUU3JBdnlTZktsMFQ3TFRlTlNIa0lKZHpzVnhYTjl0RVpsOA?oc=5",
+   "data": "2026-09-16T07:00:00+00:00",
+   "estratto": "Reati con l’IA, responsabilità e risarcimenti: cosa cambia con il decreto 160/2026 Diritto.it",
+   "query": "attuazione AI Act imprese",
+   "id": "af2e5436",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "IA nella PA, la Toscana anticipa le altre Regioni: cosa cambia",
+   "testata": "Agenda Digitale",
+   "dominio": "agendadigitale.eu",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNd2RuTklRelVJOE0ydXo4X2RDY0xjZXh0cVNqN3FraWI5b3VvQUE1WWFWUWp3Q3Y2YnIwd20zUGFZa3Azalo1N3F5SmRVeENaSnI2S0daX3BSbFVBUTNDcW1EbnBvbzBNNkUwYlRCLXFsdUpGb3dodVV5M0sybEFZakk0emE2Wi1iTXM4cTB5amh6ZjFPUl9jaHpCSzlFVV9QaF80WVJ6bzkzaW1yaGN5aFQ5X004ZFlSbnVDMTE2RUZFUnVEMENUdFBR?oc=5",
+   "data": "2026-09-18T09:26:56+00:00",
+   "estratto": "IA nella PA, la Toscana anticipa le altre Regioni: cosa cambia Agenda Digitale",
+   "query": "IA pubblica amministrazione italiana",
+   "id": "ac217e31",
+   "affidabilita": 0.8
+  },
+  {
+   "titolo": "I Magnifici 7 dell'IA, comprendere l'ecosistema dell'intelligenza artificiale",
+   "testata": "orafinanza.it",
+   "dominio": "orafinanza.it",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSllQeGhTRUFjaVh2UXhDZDdkWUxNdUFSXzBIMU9PZDBUQmN5emVFeXIwRERZTVBrczJPc3VZUzIxZGpBR2MyTGtPWGZPN3RRSkRPYUFyU2N1SlhvSkF6S0RlbzdWc0lQZHhSQVpJQ3kzY1ZSRzAxTWFTLXg5Y3BHS1VsaHVNQ0hnbkJFUTI1dGZENlhRbE9Qb0RVNUFaYTNuSkJsbjZDQklldw?oc=5",
+   "data": "2026-09-14T05:00:00+00:00",
+   "estratto": "I Magnifici 7 dell'IA, comprendere l'ecosistema dell'intelligenza artificiale orafinanza.it",
+   "query": "investimenti infrastrutture calcolo IA",
+   "id": "a361f637",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "Gamindo raccoglie 1,4 milioni e punta sulla formazione IA: tra gli investitori anche i cofondatori di Bending Spoons",
+   "testata": "Forbes Italia",
+   "dominio": "forbes.it",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4tNmxYd1hfMFJlTEVRai1abzhQYkJhQ0lIemE2N2pUdy02Q0RKSy1iTGRYcGxIMnI2aEdrSWE0MzlmVkh4NzFGNldGTC1LWGhUSFAtdmhyT1R3cEtpMWZfbXlNaTJUdXl0YjNiTk9NTzNFR2pYc0RuUw?oc=5",
+   "data": "2026-09-22T09:32:31+00:00",
+   "estratto": "Gamindo raccoglie 1,4 milioni e punta sulla formazione IA: tra gli investitori anche i cofondatori di Bending Spoons Forbes Italia",
+   "query": "formazione competenze IA aziendali",
+   "id": "a703150a",
+   "affidabilita": 0.5
+  },
+  {
+   "titolo": "SPONSORED: Who's governing your AI? A trust framework for enterprise agents and models",
+   "testata": "The Register",
+   "dominio": "theregister.com",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPeDdTV19ySEJhcDRBVU80blBad3BzLXFHb2Z3NGFNTVVWaXBWdUxnZTdUcHFwVm5saUV4WGY3bTVOVjlCSjJ0V3prRjdOVXFoYmRwbkM3c2czMDJxUVFnem9CSzVJZDVZWDdROHZFbWl6TlZFWHVnaFpxTTg1U3hBcFZpek83czV4YmhVMDRvNkFPalhZWURobVNsUkY3N1N6bjQwWUNnT1dmUlN4eHFJSDVyRXV5RHNZU0xnT3JySTVibHlTd29IZGI5MjFfbUFPQzVRMHNB?oc=5",
+   "data": "2026-09-15T07:00:00+00:00",
+   "estratto": "SPONSORED: Who's governing your AI? A trust framework for enterprise agents and models The Register",
+   "query": "AI governance framework enterprise",
+   "id": "a2ae6886",
+   "affidabilita": 0.5
+  }
+ ],
+ "evals": [
+  {
+   "id": "a9d9abe2",
+   "tema": "regolazione",
+   "tipo": "policy_pubblica",
+   "settori": [],
+   "tags": [
+    "ai act",
+    "cybersecurity",
+    "governance"
+   ],
+   "rilevanza": 2,
+   "motivazione": "L'estratto è troppo povero per determinare l'impatto concreto, nonostante i temi siano centrali.",
+   "hype": 3,
+   "sintesi": "L'AI Board si focalizza su AI Act e cybersecurity."
+  },
+  {
+   "id": "ab27be37",
+   "tema": "casi_uso",
+   "tipo": "caso_uso",
+   "settori": [
+    "PA"
+   ],
+   "tags": [
+    "pubblica amministrazione",
+    "piemonte",
+    "servizi pubblici"
+   ],
+   "rilevanza": 2,
+   "motivazione": "L'estratto non fornisce dettagli sull'implementazione o i risultati del progetto Auxil.IA.",
+   "hype": 3,
+   "sintesi": "La Regione Piemonte presenta Auxil.IA per l'intelligenza artificiale nella pubblica amministrazione."
+  },
+  {
+   "id": "ae94b66b",
+   "tema": "investimenti",
+   "tipo": "investimento",
+   "settori": [
+    "finanza"
+   ],
+   "tags": [
+    "simest",
+    "quantum computing",
+    "finanziamenti"
+   ],
+   "rilevanza": 4,
+   "motivazione": "L'attivazione di una sezione di fondo specifica per IA e Quantum Computing impatta direttamente le strategie di investimento aziendale.",
+   "hype": 1,
+   "sintesi": "SIMEST ha reso operativa la sezione Investimenti IA & Quantum Computing del Fondo 384/81."
+  },
+  {
+   "id": "a04f6fef",
+   "tema": "competenze",
+   "tipo": "competenze",
+   "settori": [],
+   "tags": [
+    "openai",
+    "formazione",
+    "academy"
+   ],
+   "rilevanza": 1,
+   "motivazione": "Si tratta di un anniversario di un programma formativo senza dati su impatti o nuovi sviluppi.",
+   "hype": 4,
+   "sintesi": "OpenAI celebra due anni di OpenAI Academy."
+  },
+  {
+   "id": "a5376a43",
+   "tema": "governance",
+   "tipo": "regolazione",
+   "settori": [
+    "sanità"
+   ],
+   "tags": [
+    "healthcare",
+    "governance",
+    "compliance"
+   ],
+   "rilevanza": 4,
+   "motivazione": "Fornisce linee guida operative per la governance dell'IA in ambito sanitario basate su specifici disegni di legge.",
+   "hype": 2,
+   "sintesi": "Quarles & Brady LLP propone un framework di governance per l'uso dell'IA in sanità basato su cinque disegni di legge."
+  },
+  {
+   "id": "ab0667ec",
+   "tema": "competenze",
+   "tipo": "ricerca",
+   "settori": [],
+   "tags": [
+    "education",
+    "business school",
+    "metodologia"
+   ],
+   "rilevanza": 1,
+   "motivazione": "Notizia di carattere accademico con scarso impatto sulle decisioni di un AI decision maker aziendale.",
+   "hype": 3,
+   "sintesi": "L'intelligenza artificiale sta modificando i case study nelle business school."
+  },
+  {
+   "id": "a0a9a11b",
+   "tema": "governance",
+   "tipo": "policy_pubblica",
+   "settori": [
+    "education"
+   ],
+   "tags": [
+    "istruzione",
+    "governance",
+    "trasformazione digitale"
+   ],
+   "rilevanza": 2,
+   "motivazione": "Rilevante per chi opera nel settore education, ma troppo generico per un decision maker industriale.",
+   "hype": 3,
+   "sintesi": "Il Consiglio d'Europa presenta una bussola per la governance dell'IA e della trasformazione digitale nell'istruzione."
+  },
+  {
+   "id": "a5db133b",
+   "tema": "tecnologia",
+   "tipo": "prodotto",
+   "settori": [
+    "PA"
+   ],
+   "tags": [
+    "slm",
+    "small language models",
+    "federal ai"
+   ],
+   "rilevanza": 3,
+   "motivazione": "L'analisi sull'appropriatezza degli SLM rispetto ai modelli grandi è cruciale per l'ottimizzazione di costi e infrastrutture.",
+   "hype": 2,
+   "sintesi": "FedTech Magazine analizza quando i Small Language Models sono la scelta corretta per l'IA federale."
+  },
+  {
+   "id": "a74271c3",
+   "tema": "regolazione",
+   "tipo": "prodotto",
+   "settori": [],
+   "tags": [
+    "compliance",
+    "regulatory scanning",
+    "governance"
+   ],
+   "rilevanza": 2,
+   "motivazione": "L'estratto è troppo povero per valutare l'efficacia dello strumento di compliance proposto.",
+   "hype": 4,
+   "sintesi": "IBM propone un sistema di Regulatory Horizon Scanning per accelerare la compliance dell'IA."
+  },
+  {
+   "id": "a3312fb6",
+   "tema": "competenze",
+   "tipo": "competenze",
+   "settori": [],
+   "tags": [
+    "skills gap",
+    "training",
+    "risorse umane"
+   ],
+   "rilevanza": 2,
+   "motivazione": "L'estratto suggerisce un approccio generale senza fornire dettagli metodologici o dati.",
+   "hype": 3,
+   "sintesi": "Un approccio alla formazione basato sulle competenze può aiutare a colmare il gap di skill nell'IA."
+  },
+  {
+   "id": "af826d27",
+   "tema": "casi_uso",
+   "tipo": "caso_uso",
+   "settori": [
+    "procurement"
+   ],
+   "tags": [
+    "procurement",
+    "contrattualistica",
+    "automazione"
+   ],
+   "rilevanza": 2,
+   "motivazione": "L'estratto pone domande strategiche ma non fornisce soluzioni o casi concreti.",
+   "hype": 3,
+   "sintesi": "L'articolo analizza la preparazione di aziende e contratti verso un procurement AI-native."
+  },
+  {
+   "id": "a1bbc833",
+   "tema": "regolazione",
+   "tipo": "policy_pubblica",
+   "settori": [
+    "istruzione"
+   ],
+   "tags": [
+    "ai act",
+    "scuola",
+    "educazione"
+   ],
+   "rilevanza": 3,
+   "motivazione": "Rilevante per chi gestisce l'IA nella PA o in ambito educativo in relazione all'AI Act.",
+   "hype": 2,
+   "sintesi": "L'articolo tratta gli usi pratici, i limiti e le regole dell'AI Act applicate alla scuola."
+  },
+  {
+   "id": "aded2190",
+   "tema": "strategia",
+   "tipo": "ricerca",
+   "settori": [
+    "logistica"
+   ],
+   "tags": [
+    "logistica",
+    "human-in-the-loop",
+    "trasporti"
+   ],
+   "rilevanza": 2,
+   "motivazione": "Si tratta di una dichiarazione di intenti senza dettagli tecnici o operativi.",
+   "hype": 4,
+   "sintesi": "Dari afferma che la persona resterà centrale nell'integrazione dell'IA nella logistica."
+  },
+  {
+   "id": "a47a8324",
+   "tema": "strategia",
+   "tipo": "investimento",
+   "settori": [
+    "industria"
+   ],
+   "tags": [
+    "ia sovrana",
+    "tech industriale",
+    "strategia"
+   ],
+   "rilevanza": 2,
+   "motivazione": "L'estratto menziona strategie aziendali senza specificarne i contenuti o i risultati.",
+   "hype": 4,
+   "sintesi": "Igor Bailo illustra le strategie di Engineering su IA sovrana e tecnologia industriale."
+  },
+  {
+   "id": "a7bcabf4",
+   "tema": "casi_uso",
+   "tipo": "ricerca",
+   "settori": [
+    "logistica"
+   ],
+   "tags": [
+    "supply chain",
+    "pianificazione",
+    "adozione ia"
+   ],
+   "rilevanza": 3,
+   "motivazione": "Fornisce un dato sullo stato di adozione dell'IA nella supply chain, utile per benchmark.",
+   "hype": 2,
+   "sintesi": "Le imprese aumentano la pianificazione della supply chain ma utilizzano poco l'intelligenza artificiale."
+  },
+  {
+   "id": "a452810a",
+   "tema": "casi_uso",
+   "tipo": "caso_uso",
+   "settori": [
+    "moda",
+    "beauty"
+   ],
+   "tags": [
+    "moda",
+    "beauty",
+    "italia"
+   ],
+   "rilevanza": 2,
+   "motivazione": "L'estratto è troppo generico per determinare l'utilità pratica per un decision maker.",
+   "hype": 3,
+   "sintesi": "L'articolo analizza l'applicazione dell'intelligenza artificiale nei settori moda e beauty in Italia."
+  },
+  {
+   "id": "a11fbf9a",
+   "tema": "casi_uso",
+   "tipo": "caso_uso",
+   "settori": [
+    "retail"
+   ],
+   "tags": [
+    "retail",
+    "adozione",
+    "statistiche"
+   ],
+   "rilevanza": 2,
+   "motivazione": "Fornisce un dato di mercato sull'adozione nel retail, ma manca di dettagli operativi.",
+   "hype": 2,
+   "sintesi": "L'utilizzo dell'IA nel settore retail è passato dal 39% al 65% in un anno."
+  },
+  {
+   "id": "aba604c7",
+   "tema": "regolazione",
+   "tipo": "regolazione",
+   "settori": [
+    "PA"
+   ],
+   "tags": [
+    "normativa",
+    "decreto",
+    "italia"
+   ],
+   "rilevanza": 5,
+   "motivazione": "Un decreto in Gazzetta Ufficiale introduce obblighi normativi immediati e certi.",
+   "hype": 1,
+   "sintesi": "Un decreto sull'intelligenza artificiale è stato pubblicato in Gazzetta con efficacia dal 30 settembre."
+  },
+  {
+   "id": "a1785133",
+   "tema": "strategia",
+   "tipo": "policy_pubblica",
+   "settori": [
+    "PA"
+   ],
+   "tags": [
+    "pa",
+    "sovranità digitale",
+    "europa"
+   ],
+   "rilevanza": 2,
+   "motivazione": "L'estratto è troppo povero per determinare l'impatto decisionale concreto.",
+   "hype": 3,
+   "sintesi": "Il testo tratta il rapporto tra pubblica amministrazione, sovranità europea e intelligenza artificiale."
+  },
+  {
+   "id": "a981fe20",
+   "tema": "investimenti",
+   "tipo": "ricerca",
+   "settori": [
+    "energia"
+   ],
+   "tags": [
+    "sostenibilità",
+    "energia",
+    "infrastrutture"
+   ],
+   "rilevanza": 2,
+   "motivazione": "Tratta temi sistemici di sostenibilità ma senza indicazioni su azioni immediate per il decision maker.",
+   "hype": 3,
+   "sintesi": "L'intelligenza artificiale richiede energia e infrastrutture sostenibili."
+  },
+  {
+   "id": "add36c43",
+   "tema": "competenze",
+   "tipo": "competenze",
+   "settori": [
+    "cross-sector"
+   ],
+   "tags": [
+    "upskilling",
+    "bandi",
+    "finanziamenti"
+   ],
+   "rilevanza": 4,
+   "motivazione": "L'accesso a finanziamenti per la formazione è un driver critico per l'implementazione dell'IA.",
+   "hype": 2,
+   "sintesi": "Sono disponibili informazioni su bandi 2026 per finanziare l'upskilling digitale e AI in azienda."
+  },
+  {
+   "id": "aa30f8f9",
+   "tema": "governance",
+   "tipo": "prodotto",
+   "settori": [
+    "cross-sector"
+   ],
+   "tags": [
+    "governance",
+    "enterprise ai",
+    "trust"
+   ],
+   "rilevanza": 3,
+   "motivazione": "Sottolinea l'importanza della governance rispetto agli algoritmi, tema centrale per i CDO.",
+   "hype": 4,
+   "sintesi": "L'articolo sostiene che la governance sia più importante degli algoritmi per costruire un'IA aziendale affidabile."
+  },
+  {
+   "id": "a17c6444",
+   "tema": "strategia",
+   "tipo": "ricerca",
+   "settori": [
+    "cross-sector"
+   ],
+   "tags": [
+    "trend",
+    "outlook",
+    "mckinsey"
+   ],
+   "rilevanza": 2,
+   "motivazione": "Gli outlook di consulenza sono spesso generici e soggetti a hype se privi di dati specifici nell'estratto.",
+   "hype": 4,
+   "sintesi": "McKinsey pubblica le tendenze tecnologiche previste per il 2026."
+  },
+  {
+   "id": "a8792e4c",
+   "tema": "competenze",
+   "tipo": "competenze",
+   "settori": [
+    "cross-sector"
+   ],
+   "tags": [
+    "cultura aziendale",
+    "change management",
+    "trasformazione digitale"
+   ],
+   "rilevanza": 3,
+   "motivazione": "Il fattore culturale è una delle principali cause di fallimento dei progetti IA.",
+   "hype": 3,
+   "sintesi": "La trasformazione digitale richiede un cambiamento culturale per non fallire."
+  },
+  {
+   "id": "a7f29c8b",
+   "tema": "tecnologia",
+   "tipo": "ricerca",
+   "settori": [],
+   "tags": [
+    "ragionamento",
+    "small models",
+    "ricerca"
+   ],
+   "rilevanza": 2,
+   "motivazione": "Si tratta di una ricerca teorica sulle capacità di ragionamento dei modelli, con impatto limitato sulle decisioni immediate di business.",
+   "hype": 3,
+   "sintesi": "Un piccolo modello di IA testa la possibilità di ragionare senza l'uso di parole."
+  },
+  {
+   "id": "ae6c6292",
+   "tema": "regolazione",
+   "tipo": "policy_pubblica",
+   "settori": [],
+   "tags": [
+    "ai act",
+    "usa",
+    "innovazione"
+   ],
+   "rilevanza": 3,
+   "motivazione": "L'analisi dell'impatto dell'AI Act sull'innovazione estera è utile per comprendere le tensioni geopolitiche e normative.",
+   "hype": 2,
+   "sintesi": "L'Information Technology and Innovation Foundation analizza i costi dell'EU AI Act per l'innovazione americana."
+  },
+  {
+   "id": "a778c14f",
+   "tema": "competenze",
+   "tipo": "competenze",
+   "settori": [],
+   "tags": [
+    "skill",
+    "lavoro",
+    "formazione"
+   ],
+   "rilevanza": 3,
+   "motivazione": "Essenziale per chi gestisce la trasformazione digitale e deve pianificare l'upskilling del capitale umano.",
+   "hype": 2,
+   "sintesi": "Il World Economic Forum esamina le competenze richieste dai datori di lavoro per i giovani nell'era dell'IA."
+  },
+  {
+   "id": "a8c5f983",
+   "tema": "regolazione",
+   "tipo": "regolazione",
+   "settori": [
+    "PA"
+   ],
+   "tags": [
+    "appalti",
+    "anac",
+    "ai act"
+   ],
+   "rilevanza": 5,
+   "motivazione": "Impatto diretto e critico per chi gestisce procurement e digitalizzazione nella Pubblica Amministrazione italiana.",
+   "hype": 1,
+   "sintesi": "Vengono definite le regole 2026 per l'IA negli appalti pubblici in relazione al bando ANAC e all'AI Act."
+  },
+  {
+   "id": "af48ae12",
+   "tema": "regolazione",
+   "tipo": "regolazione",
+   "settori": [],
+   "tags": [
+    "responsabilità",
+    "riconoscimento facciale",
+    "normativa"
+   ],
+   "rilevanza": 5,
+   "motivazione": "L'entrata in vigore di norme su responsabilità e riconoscimento facciale impone un adeguamento immediato della governance.",
+   "hype": 1,
+   "sintesi": "Dal 30 settembre entrano in vigore nuove regole sulla responsabilità e il riconoscimento facciale nell'IA."
+  },
+  {
+   "id": "aeba61d6",
+   "tema": "strategia",
+   "tipo": "policy_pubblica",
+   "settori": [
+    "PA"
+   ],
+   "tags": [
+    "pa",
+    "servizi al cittadino",
+    "digitalizzazione"
+   ],
+   "rilevanza": 2,
+   "motivazione": "L'estratto è troppo generico per fornire indicazioni strategiche concrete.",
+   "hype": 4,
+   "sintesi": "L'IA viene applicata per supportare i cittadini e la Pubblica Amministrazione."
+  },
+  {
+   "id": "a4b31f58",
+   "tema": "casi_uso",
+   "tipo": "caso_uso",
+   "settori": [
+    "logistica"
+   ],
+   "tags": [
+    "logistica",
+    "manutenzione predittiva",
+    "rischio cognitivo"
+   ],
+   "rilevanza": 3,
+   "motivazione": "Utile per chi opera in ambito supply chain per valutare i rischi cognitivi legati all'automazione predittiva.",
+   "hype": 3,
+   "sintesi": "L'IA nella logistica passa dalla prevenzione alla predittività introducendo nuovi rischi cognitivi."
+  },
+  {
+   "id": "a2e08be2",
+   "tema": "casi_uso",
+   "tipo": "prodotto",
+   "settori": [
+    "trasporti"
+   ],
+   "tags": [
+    "manutenzione predittiva",
+    "ferroviario",
+    "hitachi"
+   ],
+   "rilevanza": 3,
+   "motivazione": "Caso d'uso concreto di manutenzione predittiva applicata a un asset industriale su larga scala.",
+   "hype": 2,
+   "sintesi": "Hitachi Rail introduce Enhanced by HMAX per la manutenzione predittiva dei treni a partire dal 2027."
+  },
+  {
+   "id": "a65d0683",
+   "tema": "competenze",
+   "tipo": "ricerca",
+   "settori": [
+    "logistica"
+   ],
+   "tags": [
+    "supply chain",
+    "competenze",
+    "logistica"
+   ],
+   "rilevanza": 2,
+   "motivazione": "L'estratto è troppo povero per fornire dettagli concreti su strategie o casi d'uso.",
+   "hype": 3,
+   "sintesi": "L'articolo tratta l'impatto dell'IA sulla supply chain e la relativa sfida delle competenze."
+  },
+  {
+   "id": "a93322bb",
+   "tema": "casi_uso",
+   "tipo": "prodotto",
+   "settori": [
+    "moda"
+   ],
+   "tags": [
+    "moda",
+    "fashion ai",
+    "trasformazione digitale"
+   ],
+   "rilevanza": 2,
+   "motivazione": "L'estratto non riporta casi d'uso specifici o dati misurabili.",
+   "hype": 4,
+   "sintesi": "L'intelligenza artificiale sta trasformando il settore della moda."
+  },
+  {
+   "id": "a1817dba",
+   "tema": "casi_uso",
+   "tipo": "caso_uso",
+   "settori": [
+    "retail"
+   ],
+   "tags": [
+    "smart retail",
+    "fai-da-te",
+    "retail"
+   ],
+   "rilevanza": 2,
+   "motivazione": "Mancano dettagli sull'implementazione tecnica o sui risultati ottenuti da Bricoday.",
+   "hype": 4,
+   "sintesi": "Bricoday introduce l'intelligenza artificiale e lo smart retail nel settore del fai-da-te."
+  },
+  {
+   "id": "af2e5436",
+   "tema": "regolazione",
+   "tipo": "regolazione",
+   "settori": [
+    "legale"
+   ],
+   "tags": [
+    "decreto 160/2026",
+    "responsabilità civile",
+    "normativa italiana"
+   ],
+   "rilevanza": 5,
+   "motivazione": "L'introduzione di un decreto specifico su responsabilità e risarcimenti per reati IA ha impatto diretto sulla governance e gestione del rischio.",
+   "hype": 1,
+   "sintesi": "Il decreto 160/2026 disciplina la responsabilità e i risarcimenti per i reati commessi con l'IA."
+  },
+  {
+   "id": "ac217e31",
+   "tema": "governance",
+   "tipo": "policy_pubblica",
+   "settori": [
+    "PA"
+   ],
+   "tags": [
+    "pubblica amministrazione",
+    "toscana",
+    "digitalizzazione"
+   ],
+   "rilevanza": 3,
+   "motivazione": "L'adozione di modelli di IA in una regione può fungere da benchmark per altre PA o fornitori.",
+   "hype": 3,
+   "sintesi": "La Regione Toscana implementa l'IA nella pubblica amministrazione."
+  },
+  {
+   "id": "a361f637",
+   "tema": "tecnologia",
+   "tipo": "ricerca",
+   "settori": [],
+   "tags": [
+    "ecosistema ia",
+    "mercati",
+    "big tech"
+   ],
+   "rilevanza": 1,
+   "motivazione": "Analisi di mercato generica sull'ecosistema dei grandi vendor, senza impatto decisionale immediato.",
+   "hype": 3,
+   "sintesi": "L'articolo analizza l'ecosistema dell'intelligenza artificiale attraverso i sette principali attori del settore."
+  },
+  {
+   "id": "a703150a",
+   "tema": "investimenti",
+   "tipo": "investimento",
+   "settori": [
+    "formazione"
+   ],
+   "tags": [
+    "edtech",
+    "venture capital",
+    "formazione ia"
+   ],
+   "rilevanza": 2,
+   "motivazione": "Notizia di investimento in una startup di formazione, rilevante solo per chi monitora il mercato EdTech.",
+   "hype": 1,
+   "sintesi": "Gamindo ha raccolto 1,4 milioni di euro per investire nella formazione sull'IA."
+  },
+  {
+   "id": "a2ae6886",
+   "tema": "governance",
+   "tipo": "prodotto",
+   "settori": [],
+   "tags": [
+    "governance",
+    "enterprise agents",
+    "trust framework"
+   ],
+   "rilevanza": 1,
+   "motivazione": "Contenuto sponsorizzato (marketing) senza dati o casi d'uso verificabili.",
+   "hype": 5,
+   "sintesi": "Un contenuto sponsorizzato propone un framework di fiducia per la governance di agenti e modelli IA aziendali."
+  }
+ ],
+ "themes": [
+  {
+   "id": "t1",
+   "titolo": "Nuove norme su responsabilità e riconoscimento facciale nell'IA",
+   "articoli": [
+    "aba604c7",
+    "af48ae12",
+    "af2e5436"
+   ],
+   "tipo": "regolazione",
+   "fonti_indipendenti": 3,
+   "rilevanza": 5.0,
+   "hype": 1.0,
+   "affidabilita": 0.62,
+   "score": 0.885
+  },
+  {
+   "id": "t11",
+   "titolo": "Regole 2026 per l'IA negli appalti pubblici e ANAC",
+   "articoli": [
+    "a8c5f983"
+   ],
+   "tipo": "regolazione",
+   "fonti_indipendenti": 1,
+   "rilevanza": 5.0,
+   "hype": 1.0,
+   "affidabilita": 0.5,
+   "score": 0.683
+  },
+  {
+   "id": "t2",
+   "titolo": "SIMEST attiva sezione Investimenti IA & Quantum Computing",
+   "articoli": [
+    "ae94b66b"
+   ],
+   "tipo": "investimento",
+   "fonti_indipendenti": 1,
+   "rilevanza": 4.0,
+   "hype": 1.0,
+   "affidabilita": 0.5,
+   "score": 0.571
+  },
+  {
+   "id": "t3",
+   "titolo": "Framework di governance per l'IA in sanità",
+   "articoli": [
+    "a5376a43"
+   ],
+   "tipo": "regolazione",
+   "fonti_indipendenti": 1,
+   "rilevanza": 4.0,
+   "hype": 2.0,
+   "affidabilita": 0.5,
+   "score": 0.533
+  },
+  {
+   "id": "t7",
+   "titolo": "Bandi 2026 per l'upskilling digitale e AI in azienda",
+   "articoli": [
+    "add36c43"
+   ],
+   "tipo": "competenze",
+   "fonti_indipendenti": 1,
+   "rilevanza": 4.0,
+   "hype": 2.0,
+   "affidabilita": 0.5,
+   "score": 0.533
+  },
+  {
+   "id": "t14",
+   "titolo": "Implementazione dell'IA nella Pubblica Amministrazione della Regione Toscana",
+   "articoli": [
+    "ac217e31"
+   ],
+   "tipo": "policy_pubblica",
+   "fonti_indipendenti": 1,
+   "rilevanza": 3.0,
+   "hype": 3.0,
+   "affidabilita": 0.8,
+   "score": 0.473
+  },
+  {
+   "id": "t4",
+   "titolo": "Analisi sull'adozione di Small Language Models nell'IA federale",
+   "articoli": [
+    "a5db133b"
+   ],
+   "tipo": "prodotto",
+   "fonti_indipendenti": 1,
+   "rilevanza": 3.0,
+   "hype": 2.0,
+   "affidabilita": 0.5,
+   "score": 0.421
+  },
+  {
+   "id": "t5",
+   "titolo": "Applicazione dell'AI Act nel settore scolastico",
+   "articoli": [
+    "a1bbc833"
+   ],
+   "tipo": "policy_pubblica",
+   "fonti_indipendenti": 1,
+   "rilevanza": 3.0,
+   "hype": 2.0,
+   "affidabilita": 0.5,
+   "score": 0.421
+  },
+  {
+   "id": "t6",
+   "titolo": "Stato dell'IA nella pianificazione della supply chain",
+   "articoli": [
+    "a7bcabf4"
+   ],
+   "tipo": "ricerca",
+   "fonti_indipendenti": 1,
+   "rilevanza": 3.0,
+   "hype": 2.0,
+   "affidabilita": 0.5,
+   "score": 0.421
+  },
+  {
+   "id": "t9",
+   "titolo": "Impatto dell'EU AI Act sull'innovazione statunitense",
+   "articoli": [
+    "ae6c6292"
+   ],
+   "tipo": "policy_pubblica",
+   "fonti_indipendenti": 1,
+   "rilevanza": 3.0,
+   "hype": 2.0,
+   "affidabilita": 0.5,
+   "score": 0.421
+  },
+  {
+   "id": "t10",
+   "titolo": "Competenze richieste dai datori di lavoro nell'era dell'IA",
+   "articoli": [
+    "a778c14f"
+   ],
+   "tipo": "competenze",
+   "fonti_indipendenti": 1,
+   "rilevanza": 3.0,
+   "hype": 2.0,
+   "affidabilita": 0.5,
+   "score": 0.421
+  },
+  {
+   "id": "t13",
+   "titolo": "Hitachi Rail lancia HMAX per manutenzione predittiva treni",
+   "articoli": [
+    "a2e08be2"
+   ],
+   "tipo": "prodotto",
+   "fonti_indipendenti": 1,
+   "rilevanza": 3.0,
+   "hype": 2.0,
+   "affidabilita": 0.5,
+   "score": 0.421
+  },
+  {
+   "id": "t8",
+   "titolo": "Importanza del cambiamento culturale nella trasformazione digitale",
+   "articoli": [
+    "a8792e4c"
+   ],
+   "tipo": "competenze",
+   "fonti_indipendenti": 1,
+   "rilevanza": 3.0,
+   "hype": 3.0,
+   "affidabilita": 0.5,
+   "score": 0.383
+  },
+  {
+   "id": "t12",
+   "titolo": "Evoluzione dell'IA nella logistica e rischi cognitivi",
+   "articoli": [
+    "a4b31f58"
+   ],
+   "tipo": "caso_uso",
+   "fonti_indipendenti": 1,
+   "rilevanza": 3.0,
+   "hype": 3.0,
+   "affidabilita": 0.5,
+   "score": 0.383
+  }
+ ],
+ "selected": [
+  "t1",
+  "t11",
+  "t2",
+  "t7",
+  "t14",
+  "t4",
+  "t5"
+ ],
+ "approved": [
+  "a0a9a11b",
+  "a11fbf9a",
+  "a1785133",
+  "a1bbc833",
+  "a2e08be2",
+  "a3312fb6",
+  "a452810a",
+  "a4b31f58",
+  "a5376a43",
+  "a5db133b",
+  "a65d0683",
+  "a703150a",
+  "a778c14f",
+  "a7bcabf4",
+  "a7f29c8b",
+  "a8792e4c",
+  "a8c5f983",
+  "a981fe20",
+  "a9d9abe2",
+  "ab27be37",
+  "aba604c7",
+  "ac217e31",
+  "add36c43",
+  "ae6c6292",
+  "ae94b66b",
+  "af2e5436",
+  "af48ae12",
+  "af826d27"
+ ],
+ "editor_note": "Replay: approvazione del redattore simulata con la regola: temi scelti + notizie con rilevanza ≥ 2 e hype ≤ 3.",
+ "core": {
+  "oggetto": "AI Brief: Nuove norme responsabilità, finanziamenti e SLM",
+  "editoriale": "La quindicina è segnata da un passaggio cruciale: l'IA esce dalla fase di sperimentazione libera per entrare in un perimetro normativo e finanziario più rigido e definito. L'entrata in vigore del decreto 160/2026 in Italia sposta l'attenzione dalla pura efficacia tecnica alla responsabilità giuridica, rendendo urgente una revisione dei framework di governance interna. Parallelamente, assistiamo a un'evoluzione strategica nell'approccio tecnologico: l'interesse per i Small Language Models (SLM) suggerisce una maturazione del mercato, che inizia a privilegiare l'efficienza e la specificità rispetto alla potenza generica dei modelli massivi. Per chi guida la trasformazione digitale, il focus deve ora spostarsi sulla mitigazione del rischio legale e sull'ottimizzazione degli investimenti, sfruttando i nuovi canali di finanziamento per l'upskilling e l'infrastruttura. La sfida non è più solo implementare l'IA, ma renderla sostenibile, sicura e conforme a un quadro regolatorio che sta diventando operativo, trasformando la compliance da vincolo a vantaggio competitivo per le imprese più strutturate.",
+  "notizie": [
+   {
+    "tema_id": "t1",
+    "titolo": "Entra in vigore il decreto 160/2026 su responsabilità e riconoscimento facciale",
+    "fatto": "Dal 30 settembre 2026 sono operative nuove norme pubblicate in Gazzetta Ufficiale. Il decreto 160/2026 disciplina la responsabilità e i risarcimenti per i reati commessi tramite l'intelligenza artificiale e introduce regole specifiche sull'uso del riconoscimento facciale.",
+    "commento": "L'introduzione di norme specifiche sulla responsabilità giuridica rappresenta un punto di svolta per la governance aziendale. Fino ad oggi, l'attribuzione della responsabilità per l'output di un sistema IA è rimasta in una zona grigia tra fornitore e utilizzatore. Con il decreto 160/2026, i decision maker devono aggiornare i contratti di servizio (SLA) e le polizze assicurative per coprire i rischi legati a potenziali reati o danni causati dai sistemi implementati. È fondamentale mappare ogni caso d'uso che preveda il riconoscimento facciale, poiché l'area è ora soggetta a vincoli più stringenti. Vi suggeriamo di avviare un audit di conformità con l'ufficio legale per definire chi, all'interno dell'organizzazione, detiene la responsabilità ultima della supervisione umana (human-in-the-loop), elemento che sarà determinante in caso di contenzioso sui risarcimenti. Nelle prossime settimane, è prioritario censire i sistemi di IA in produzione che interagiscono con dati biometrici o che prendono decisioni automatizzate con impatto legale, valutando l'esposizione al rischio di risarcimento danni. La mancanza di una chiara catena di responsabilità interna potrebbe esporre l'azienda a sanzioni severe o a costi legali imprevisti in caso di malfunzionamenti algoritmici.",
+    "fonti_ids": [
+     "aba604c7",
+     "af48ae12",
+     "af2e5436"
+    ],
+    "fonti": [
+     {
+      "id": "aba604c7",
+      "testata": "GiuriCivile.it",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTk5YODRIMVplVERIbFlnZWZSVGx1RU42ZElkR3AtYXJqWExJcVFnZEs1eExPZ3d0RWF4c2p0RzQ5dHllNzFiMjZjb1dIc21JTWdBYTZaQUxSdFdYR05XOTBGUy1ObGN5OF92WGNfQlZkb2N6X1hqOEhoZ1Q5cUc4dmtCNDdZNGhUU3FKeFJsSDZ5MVZUXzJvSEhhVk9ndw?oc=5",
+      "dominio": "giuricivile.it",
+      "data": "2026-09-17"
+     },
+     {
+      "id": "af48ae12",
+      "testata": "Il Sole 24 ORE",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPd1FxR1QtM3lrd3puYkYza1BYVFJ2d1J2Q0xiRWxtaGVvMkhsX2RzNlR1ZlJnWHJjWDdYdE14ZERsRklfN051eGYzQ19FUVRUdGUtSHV5T3ZfdXZtcllzN0YwNEdJWUc2d3ZZZWRnWm91czdVQ3ltNzU5N2w5bXdrYi1TMlM4RmhZMDRqaW94RWhkdDBZT25LdENxaUxGNEU1MGN4cmxPeFU3Y2VWTzVVVHA0QVRzOWl4d1h6WFFKVjVReV84WXlaZVNsdzNuY2JNdk84aE9ub2RDZw?oc=5",
+      "dominio": "ntplusdiritto.ilsole24ore.com",
+      "data": "2026-09-16"
+     },
+     {
+      "id": "af2e5436",
+      "testata": "Diritto.it",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13cndscGpSanpJYnNHcV9TZEZ1UWZBZEVyek1XZGFyQldmQmxob0wtVVBIV1M4MzdmWTRrSXVHb1kwMzhMY194UlhzZGVSdUoyVDhWRXZZalJUU3JBdnlTZktsMFQ3TFRlTlNIa0lKZHpzVnhYTjl0RVpsOA?oc=5",
+      "dominio": "diritto.it",
+      "data": "2026-09-16"
+     }
+    ],
+    "tipo": "regolazione"
+   },
+   {
+    "tema_id": "t11",
+    "titolo": "Definite le regole 2026 per l'IA negli appalti pubblici",
+    "fatto": "Sono state stabilite le linee guida per l'integrazione dell'intelligenza artificiale negli appalti pubblici per il 2026. Le norme coordinano l'operatività dei bandi ANAC con i requisiti previsti dall'AI Act europeo.",
+    "commento": "Per le imprese che forniscono soluzioni tecnologiche alla Pubblica Amministrazione, l'allineamento tra i bandi ANAC e l'AI Act non è più opzionale ma un requisito di accesso al mercato. La complessità risiede nel tradurre i requisiti tecnici dell'AI Act (specialmente per i sistemi ad alto rischio) in criteri di valutazione delle offerte. Chi gestisce portfolio IA deve monitorare attentamente i nuovi capitolati d'appalto, poiché la conformità normativa diventerà un criterio discriminante rispetto al solo prezzo o alla performance tecnica. È il momento di integrare i processi di 'compliance by design' nello sviluppo dei prodotti destinati al settore pubblico, assicurando che la documentazione tecnica richiesta dall'AI Act sia già pronta per essere presentata in fase di gara. Nelle prossime settimane, vi consigliamo di verificare con i team di vendita e prodotto se i sistemi offerti alla PA rientrano nelle categorie di rischio definite dall'AI Act. La capacità di dimostrare la trasparenza algoritmica e la robustezza dei dati di addestramento sarà il vero differenziatore competitivo. Ignorare questi requisiti significa rischiare l'esclusione automatica dalle gare d'appalto o l'annullamento dei contratti già stipulati per difetto di conformità normativa.",
+    "fonti_ids": [
+     "a8c5f983"
+    ],
+    "fonti": [
+     {
+      "id": "a8c5f983",
+      "testata": "biblus.acca.it",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWU9jQnlWX0pEMVYyRFM5dmM2VURZR0lnTUlGYUlVcFNURjhrMTFOYnJpV0hId1BjUl9wbkl2b0Y4aGI2Z0xaN3JGRWc4a0hHbVVRWEtDTjVLYV9QLXc0MHp6YTFzSHJXVUtnVzR0dS1jaGRrSzhEdGxJc2NKTi1tWE5iZ2RqUFo2QkRaT2NEM1NpdHFDNTloQ0dQVlBnN0g4YldzZ3B3?oc=5",
+      "dominio": "biblus.acca.it",
+      "data": "2026-09-18"
+     }
+    ],
+    "tipo": "regolazione"
+   },
+   {
+    "tema_id": "t2",
+    "titolo": "SIMEST attiva sezione investimenti per IA e Quantum Computing",
+    "fatto": "SIMEST ha reso operativa una nuova sezione dedicata agli investimenti in Intelligenza Artificiale e Quantum Computing all'interno del Fondo 384/81.",
+    "commento": "L'apertura di una linea di finanziamento dedicata da parte di SIMEST segnala un riconoscimento istituzionale della necessità di investimenti in infrastrutture avanzate. Per un CDO o un CIO, questo rappresenta un'opportunità per finanziare l'espansione internazionale di soluzioni IA o l'acquisizione di tecnologie di calcolo quantistico, riducendo l'impatto sul budget operativo (OPEX). L'inclusione del Quantum Computing indica che l'orizzonte temporale degli investimenti si sta allungando: non si tratta più solo di implementare LLM per la produttività, ma di preparare l'azienda a salti tecnologici di paradigma. Vi consigliamo di valutare se i vostri progetti di R&D a lungo termine possono rientrare nei parametri di questo fondo per accelerare l'adozione di tecnologie che oggi hanno costi di ingresso proibitivi. Nelle prossime settimane, suggeriamo di mappare le iniziative di internazionalizzazione che prevedono l'uso di IA per verificare la compatibilità con i requisiti del Fondo 384/81. Questo strumento può essere utilizzato per mitigare il rischio finanziario legato all'adozione di tecnologie emergenti, permettendo di testare l'impatto del Quantum Computing su problemi di ottimizzazione complessi senza gravare interamente sul budget di innovazione aziendale.",
+    "fonti_ids": [
+     "ae94b66b"
+    ],
+    "fonti": [
+     {
+      "id": "ae94b66b",
+      "testata": "Fira – Finanziaria Regionale Abruzzese",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZFo5SXdlT1hnbWxXYUdmdHBxdDVDWWJpNGtQLU9wTVdhdEszOE53amtORXFfSnYwRE8xZ3RRajFlMjREaWFaNlV1dVBfb3JDeEhqdkZ1QkdYMGpJMGQyaFV3QkhNZWwwWm5md0NiRC10Wk1JYlVjNUhpcDVqR3Z4NWgwclJvbm93N0VPNDBqNGhBb1VUaEZTUWMwZjdaWVVGVThISGhGbl93S3ZsOVpXeUZuWVpaYUFJS1R5dzFTdldvcTRiOWlr?oc=5",
+      "dominio": "fira.it",
+      "data": "2026-09-24"
+     }
+    ],
+    "tipo": "investimento"
+   },
+   {
+    "tema_id": "t7",
+    "titolo": "Disponibili bandi 2026 per l'upskilling digitale e AI",
+    "fatto": "Sono state pubblicate informazioni relative ai bandi 2026 destinati a finanziare la formazione e l'upskilling del personale aziendale in ambito digitale e intelligenza artificiale.",
+    "commento": "Il gap di competenze rimane il principale collo di bottiglia per l'adozione dell'IA su scala industriale. L'esistenza di bandi specifici per l'upskilling permette di spostare l'onere finanziario della formazione dal budget HR a fondi esterni. Tuttavia, la sfida per il decision maker non è solo ottenere il finanziamento, ma definire un piano formativo che non sia generico. È necessario distinguere tra 'AI literacy' per tutta l'organizzazione e formazione tecnica specialistica per i team di dati e IT. Suggeriamo di mappare le competenze mancanti per i casi d'uso già approvati nel portfolio IA e di utilizzare questi bandi per colmare i vuoti specifici, evitando corsi standardizzati che non producono un impatto reale sulla produttività aziendale. Nelle prossime settimane, vi invitiamo a coordinarvi con il dipartimento HR per allineare le necessità tecnologiche del piano IA con le opportunità di finanziamento disponibili. Un errore comune è richiedere fondi per corsi di 'IA generale' che non portano a risultati misurabili; è preferibile strutturare percorsi di formazione legati a obiettivi di business concreti, come l'ottimizzazione dei processi tramite agenti IA o la gestione della governance dei dati, garantendo così un ROI reale sull'investimento in capitale umano.",
+    "fonti_ids": [
+     "add36c43"
+    ],
+    "fonti": [
+     {
+      "id": "add36c43",
+      "testata": "incentivimpresa.it",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNdmR0UHU5ak5COVdTMU1WQ0ZIT2tWSHowZUpaVXJJaVo0YjhURGF2X1FmdnpDemZObkxYRy1aVGh0OUlNcDFXR2psME01X2kxQVN1WjFMcXJXNl9YQ3ZIYnItZ1VHcVk4RWdNbmJsd0ZZaHAtc3FRUGZRMnBrekNzYzFLTQ?oc=5",
+      "dominio": "incentivimpresa.it",
+      "data": "2026-09-19"
+     }
+    ],
+    "tipo": "competenze"
+   },
+   {
+    "tema_id": "t14",
+    "titolo": "Regione Toscana implementa l'IA nella Pubblica Amministrazione",
+    "fatto": "La Regione Toscana ha avviato l'implementazione di sistemi di intelligenza artificiale all'interno della propria amministrazione pubblica, anticipando altre regioni italiane.",
+    "commento": "L'iniziativa della Toscana funge da caso studio per l'adozione dell'IA nel settore pubblico regionale. Per chi opera nella PA o fornisce servizi di consulenza, l'interesse risiede nel modo in cui una regione gestisce l'integrazione dell'IA nei processi amministrativi esistenti. L'osservazione di questo modello permetterà di capire quali siano le resistenze organizzative più comuni e quali i flussi di lavoro che beneficiano maggiormente dell'automazione intelligente. È probabile che l'approccio toscano diventi un benchmark per le altre amministrazioni regionali; monitorare i risultati in termini di efficienza dei servizi al cittadino fornirà dati concreti per giustificare investimenti simili in altri contesti pubblici. Nelle prossime settimane, chi gestisce la trasformazione digitale in enti pubblici dovrebbe analizzare i framework di implementazione adottati dalla Toscana, in particolare per quanto riguarda la gestione del cambiamento e l'accettazione da parte dei dipendenti. L'adozione dell'IA nella PA non è un problema tecnologico, ma organizzativo; studiare un caso di implementazione anticipata permette di evitare errori di deployment e di definire KPI di successo realistici per l'automazione dei servizi amministrativi, riducendo i tempi di risposta all'utenza.",
+    "fonti_ids": [
+     "ac217e31"
+    ],
+    "fonti": [
+     {
+      "id": "ac217e31",
+      "testata": "Agenda Digitale",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNd2RuTklRelVJOE0ydXo4X2RDY0xjZXh0cVNqN3FraWI5b3VvQUE1WWFWUWp3Q3Y2YnIwd20zUGFZa3Azalo1N3F5SmRVeENaSnI2S0daX3BSbFVBUTNDcW1EbnBvbzBNNkUwYlRCLXFsdUpGb3dodVV5M0sybEFZakk0emE2Wi1iTXM4cTB5amh6ZjFPUl9jaHpCSzlFVV9QaF80WVJ6bzkzaW1yaGN5aFQ5X004ZFlSbnVDMTE2RUZFUnVEMENUdFBR?oc=5",
+      "dominio": "agendadigitale.eu",
+      "data": "2026-09-18"
+     }
+    ],
+    "tipo": "policy_pubblica"
+   },
+   {
+    "tema_id": "t4",
+    "titolo": "Analisi sull'efficacia dei Small Language Models nell'IA federale",
+    "fatto": "Un'analisi di FedTech Magazine esamina le condizioni in cui i Small Language Models (SLM) rappresentano la scelta più appropriata per l'implementazione di sistemi di IA in ambito federale.",
+    "commento": "Il passaggio dai Large Language Models (LLM) agli SLM è un trend strategico fondamentale per l'efficienza dei costi e la privacy. Gli SLM richiedono meno risorse computazionali, possono essere eseguiti localmente (on-premise) e sono più facili da addestrare su dataset verticali e proprietari. Per un AI Head, questo significa poter ridurre la dipendenza dai grandi provider cloud e mitigare i rischi di data leakage. In un'architettura federale, dove i dati rimangono distribuiti e non centralizzati, gli SLM sono l'unica opzione sostenibile. Vi suggeriamo di valutare se alcuni dei vostri casi d'uso attuali, attualmente gestiti da modelli generalisti costosi, possano essere migrati verso modelli più piccoli e specializzati, ottimizzando così il TCO (Total Cost of Ownership) dell'infrastruttura IA. Nelle prossime settimane, è opportuno condurre un'analisi di costo-beneficio tra l'uso di API di modelli massivi e l'implementazione di SLM addestrati su dati aziendali. Questo approccio non solo riduce i costi di inferenza, ma aumenta la sicurezza dei dati sensibili, eliminando la necessità di trasferire informazioni critiche verso server esterni. La scelta di un modello SLM ben ottimizzato può offrire performance paragonabili a un LLM per task specifici, migliorando al contempo la latenza di risposta.",
+    "fonti_ids": [
+     "a5db133b"
+    ],
+    "fonti": [
+     {
+      "id": "a5db133b",
+      "testata": "FedTech Magazine",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTEtkbjdVbElCd3hWTE5Yc3k5dmtmcWpuZlhHaWkwUC1tVmdmOGVnZVVjQkI1eFJtTmRnRmY2M2ZBdFY4N1FHMWRreXEzTndIcng2Y09PRHY0bi14MTh1cUFkQjFTNGROTUxaU3g2YVZRMzNFVVZ5ZDNsaUkwTUhWdG40YWJNTGtPLWNfN3AxaDVpVUdZSkpMWEJRMA?oc=5",
+      "dominio": "fedtechmagazine.com",
+      "data": "2026-09-25"
+     }
+    ],
+    "tipo": "prodotto"
+   },
+   {
+    "tema_id": "t5",
+    "titolo": "Applicazione dell'AI Act nel settore scolastico",
+    "fatto": "Sono stati analizzati gli usi pratici, i limiti e le regole previste dall'AI Act per l'applicazione dell'intelligenza artificiale all'interno del sistema scolastico.",
+    "commento": "Sebbene l'ambito scolastico possa sembrare distante dal corporate, l'applicazione dell'AI Act in questo settore è emblematica perché l'istruzione è spesso classificata come area ad alto rischio. Le regole che verranno applicate a scuola — in termini di trasparenza, supervisione umana e protezione dei dati dei minori — saranno speculari a quelle richieste per l'IA applicata alle risorse umane o alla valutazione del personale in azienda. Studiare come l'AI Act viene declinato nella scuola permette di anticipare i requisiti di compliance per i sistemi di IA interni dedicati alla formazione e allo sviluppo del talento. È un segnale che la regolamentazione non ammette eccezioni basate sulla natura dell'ente, ma sulla finalità dell'algoritmo. Nelle prossime settimane, vi consigliamo di verificare se i vostri sistemi di IA per il recruiting, la valutazione delle performance o l'assegnazione di bonus rientrino nelle categorie di rischio simili a quelle scolastiche. Se l'algoritmo influenza l'accesso a opportunità professionali o educative, i requisiti di trasparenza e di audit saranno estremamente rigorosi. Collaborare con il DPO (Data Protection Officer) per mappare questi processi permetterà di evitare sanzioni e di costruire un sistema di gestione del talento basato su criteri equi e verificabili.",
+    "fonti_ids": [
+     "a1bbc833"
+    ],
+    "fonti": [
+     {
+      "id": "a1bbc833",
+      "testata": "voglioinsegnare.it",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdHFudG5neUhIM0JCWEZMTVVjMEVQOVZXd0xQaGtIdkxILUE0Qks3TGpkTTFfUVRETnRFc01Ud0hrUkh4S2pfWGZnNFN6ZTdTXzQ1MXRwTDh2THZIVjFDWFh2V05BRW5pZ3BxWUJiYkFONEYwUG9DMWw0UTRhbHJPY3NhTXpEMTJNU1NPUjNwXzRjSTcyM3otVFVrUFplTlNLbWJ4MV9ZVnc3Q2ZLTm1xUTJlQQ?oc=5",
+      "dominio": "voglioinsegnare.it",
+      "data": "2026-09-25"
+     }
+    ],
+    "tipo": "policy_pubblica"
+   }
+  ],
+  "da_portare_in_riunione": [
+   "Il decreto 160/2026 introduce responsabilità legali e risarcimenti per reati commessi tramite IA, rendendo necessaria la revisione di SLA e polizze assicurative.",
+   "L'adozione di Small Language Models (SLM) può ridurre i costi infrastrutturali e migliorare la privacy rispetto ai modelli generalisti.",
+   "I nuovi bandi 2026 per l'upskilling e i fondi SIMEST per IA e Quantum Computing offrono opportunità per finanziare competenze e infrastrutture senza gravare sull'OPEX."
+  ]
+ },
+ "qa": [
+  {
+   "check": "Lunghezza 1.500–2.500 parole",
+   "ok": true,
+   "dettaglio": "1868 parole"
+  },
+  {
+   "check": "5–7 notizie",
+   "ok": true,
+   "dettaglio": "7 notizie"
+  },
+  {
+   "check": "Ogni notizia ha almeno una fonte verificata",
+   "ok": true,
+   "dettaglio": "tutte collegate"
+  },
+  {
+   "check": "Diversità (max 2 per tipo)",
+   "ok": true,
+   "dettaglio": {
+    "regolazione": 2,
+    "investimento": 1,
+    "competenze": 1,
+    "policy_pubblica": 2,
+    "prodotto": 1
+   }
+  },
+  {
+   "check": "Almeno un tema di regolazione/policy",
+   "ok": true,
+   "dettaglio": ""
+  }
+ ],
+ "variants": {
+  "pubblica amministrazione|esplorativa|PA locale": {
+   "intro_segmento": "In una fase esplorativa di transizione digitale per l'ente locale, l'attenzione si sposta dalla curiosità tecnologica alla costruzione di un framework di conformità e competenze. Questa selezione di notizie supporta la definizione dei primi passi sicuri per l'integrazione dell'IA nella PA locale.",
+   "ordine": [
+    "t14",
+    "t11",
+    "t1",
+    "t7",
+    "t5",
+    "t4",
+    "t2"
+   ],
+   "adattamenti": [
+    {
+     "tema_id": "t14",
+     "commento_adattato": "L'esperienza della Regione Toscana rappresenta un benchmark fondamentale per un Responsabile della Transizione Digitale di un ente locale. In una fase esplorativa, l'obiettivo non è l'innovazione fine a se stessa, ma l'identificazione di processi amministrativi concreti che possano beneficiare dell'automazione senza destabilizzare l'organizzazione. Studiare questo caso permette di mappare le resistenze del personale e i flussi di lavoro più idonei a un primo pilota. Suggeriamo di analizzare i framework toscani per definire KPI di successo realistici e per costruire un piano di gestione del cambiamento che faciliti l'accettazione dell'IA da parte dei dipendenti comunali o provinciali, riducendo i tempi di risposta ai cittadini."
+    },
+    {
+     "tema_id": "t11",
+     "commento_adattato": "Per chi gestisce il procurement in una PA locale, l'allineamento tra bandi ANAC e AI Act è l'elemento critico per evitare l'acquisto di soluzioni non conformi. In fase di esplorazione, è essenziale che i nuovi capitolati d'appalto non si limitino a richiedere 'funzionalità IA', ma includano criteri di valutazione basati sulla trasparenza algoritmica e sulla gestione del rischio prevista dall'AI Act. Questo approccio protegge l'ente dal rischio di acquisire software che potrebbero essere dichiarati illegali o non conformi in futuro. Si consiglia di aggiornare i criteri di selezione dei fornitori, privilegiando chi dimostra una strategia di 'compliance by design' già integrata nel prodotto."
+    },
+    {
+     "tema_id": "t1",
+     "commento_adattato": "Il decreto 160/2026 introduce vincoli stringenti che richiedono un'azione immediata di censimento. Per un ente locale, è prioritario mappare se siano già in uso (anche in fase di test) sistemi di riconoscimento facciale o strumenti di decisione automatizzata che impattano sui diritti dei cittadini. Data la maturità esplorativa, il primo passo a basso rischio è l'avvio di un audit di conformità con l'ufficio legale e il DPO per definire la catena di responsabilità e l'effettiva supervisione umana (human-in-the-loop). Definire chiaramente chi detiene la responsabilità della supervisione è essenziale per prevenire contenziosi legali e sanzioni amministrative."
+    },
+    {
+     "tema_id": "t7",
+     "commento_adattato": "Il gap di competenze è il principale ostacolo alla transizione digitale negli enti locali. I bandi 2026 per l'upskilling offrono l'opportunità di finanziare la formazione senza gravare sul budget dell'ente. In questa fase, suggeriamo di non puntare a corsi generici, ma di strutturare un percorso di 'AI literacy' di base per tutto il personale, affiancato da una formazione specifica per i tecnici IT sulla governance dei dati. L'obiettivo è creare una cultura dell'IA consapevole che permetta di identificare casi d'uso validi all'interno dell'amministrazione, trasformando la formazione in un primo passo operativo verso l'adozione di strumenti di produttività."
+    },
+    {
+     "tema_id": "t5",
+     "commento_adattato": "L'analisi dell'AI Act nel settore scolastico è utile per la PA locale poiché l'istruzione è spesso un servizio gestito a livello comunale. Poiché l'istruzione è classificata come area ad alto rischio, le regole su trasparenza e protezione dei dati dei minori sono speculari a quelle che l'ente dovrà applicare in ogni servizio al cittadino che utilizzi l'IA per valutazioni o assegnazioni di benefici. Studiare questo ambito permette di anticipare i requisiti di compliance necessari per qualsiasi sistema di IA che influenzi l'accesso a servizi pubblici, garantendo equità e verificabilità dei processi."
+    },
+    {
+     "tema_id": "t4",
+     "commento_adattato": "Per una PA locale con risorse limitate, l'analisi sugli Small Language Models (SLM) è strategica. A differenza dei modelli massivi, gli SLM possono essere implementati localmente, garantendo una maggiore protezione dei dati sensibili dei cittadini e costi di gestione inferiori. In fase esplorativa, è utile valutare se i futuri casi d'uso (es. assistenti per la ricerca documentale interna) possano essere soddisfatti da modelli piccoli e specializzati piuttosto che da costose API cloud, riducendo così la dipendenza dai grandi vendor e migliorando la sicurezza dell'infrastruttura digitale dell'ente."
+    },
+    {
+     "tema_id": "t2",
+     "commento_adattato": "Questa notizia riguarda principalmente imprese e investimenti in R&D per l'internazionalizzazione; ha un impatto marginale per un Responsabile della Transizione Digitale di una PA locale, a meno che l'ente non sia coinvolto in partenariati pubblico-privati di ricerca avanzata."
+    }
+   ]
+  },
+  "manifattura|in_scala|grande impresa": {
+   "intro_segmento": "Per un CIO di una grande impresa manifatturiera con IA già in scala, l'attenzione si sposta ora dall'efficacia dei singoli pilota all'industrializzazione sostenibile, alla governance del rischio legale e all'ottimizzazione dell'infrastruttura.",
+   "ordine": [
+    "t4",
+    "t2",
+    "t1",
+    "t7",
+    "t11",
+    "t5",
+    "t14"
+   ],
+   "adattamenti": [
+    {
+     "tema_id": "t4",
+     "commento_adattato": "Per un CIO in ambito manifatturiero, l'adozione di Small Language Models (SLM) è una leva strategica per l'industrializzazione. In contesti di produzione, dove la latenza è critica e i dati di processo sono sensibili, gli SLM permettono l'esecuzione on-premise o edge, riducendo drasticamente il TCO e l'esposizione verso i cloud provider. Suggeriamo di analizzare il portfolio IA per identificare casi d'uso verticali (es. manutenzione predittiva o analisi logistica) che possono migrare da LLM generalisti a SLM specializzati. Questo approccio non solo ottimizza i costi di inferenza, ma garantisce la sovranità del dato industriale, eliminando il rischio di data leakage di IP proprietaria verso server esterni."
+    },
+    {
+     "tema_id": "t2",
+     "commento_adattato": "L'apertura del Fondo SIMEST per IA e Quantum Computing offre un'opportunità per finanziare l'evoluzione dell'infrastruttura tecnologica senza gravare interamente sull'OPEX. Per una grande impresa manifatturiera, il Quantum Computing rappresenta la frontiera per l'ottimizzazione di supply chain complesse o la simulazione di nuovi materiali. Il CIO dovrebbe valutare l'integrazione di queste tecnologie nei piani di R&D a lungo termine, utilizzando i fondi per mitigare il rischio finanziario di tecnologie emergenti. È consigliabile mappare le iniziative di internazionalizzazione dei siti produttivi che prevedono l'integrazione di IA per verificare la compatibilità con i requisiti del fondo."
+    },
+    {
+     "tema_id": "t1",
+     "commento_adattato": "Il decreto 160/2026 impone un aggiornamento immediato della governance dei rischi. In una grande impresa, l'uso di sistemi di riconoscimento facciale per il controllo accessi o la sicurezza nei siti produttivi deve essere censito e sottoposto a audit di conformità. Dal punto di vista dell'architettura e dei contratti, è prioritario rivedere gli SLA con i vendor di IA per definire chiaramente la responsabilità giuridica in caso di malfunzionamenti. Il CIO deve coordinarsi con l'ufficio legale per formalizzare la catena di supervisione umana (human-in-the-loop), assicurando che ogni sistema in produzione abbia un responsabile assegnato per evitare sanzioni severe o costi legali imprevisti."
+    },
+    {
+     "tema_id": "t7",
+     "commento_adattato": "Con l'IA già in scala, il collo di bottiglia si sposta dalle licenze software alle competenze operative. I bandi 2026 per l'upskilling permettono di finanziare la formazione tecnica necessaria per mantenere e scalare l'infrastruttura IA. Il CIO dovrebbe guidare l'HR nella definizione di percorsi formativi specifici per i team IT e Data, evitando corsi generici. L'obiettivo deve essere l'acquisizione di competenze concrete per la gestione della governance dei dati e l'ottimizzazione dei modelli in produzione, garantendo che l'investimento in capitale umano sia allineato ai KPI di produttività industriale dell'azienda."
+    },
+    {
+     "tema_id": "t11",
+     "commento_adattato": "Questa notizia è rilevante solo se l'impresa manifatturiera agisce come fornitore di soluzioni tecnologiche o infrastrutturali per la Pubblica Amministrazione. In tal caso, l'allineamento tra bandi ANAC e AI Act diventa un requisito di accesso al mercato. È necessario integrare processi di 'compliance by design' nello sviluppo dei prodotti destinati alla PA, assicurando che la documentazione tecnica richiesta dall'AI Act sia pronta per le gare d'appalto, trasformando la conformità normativa in un vantaggio competitivo rispetto ai competitor."
+    },
+    {
+     "tema_id": "t5",
+     "commento_adattato": "L'applicazione dell'AI Act nel settore scolastico fornisce un precedente utile per i sistemi di IA interni dedicati alla formazione e alla gestione del talento. Per un CIO, è un segnale che i sistemi di valutazione del personale o recruiting potrebbero essere classificati come 'ad alto rischio'. Si consiglia di mappare questi processi con il DPO per anticipare i requisiti di trasparenza e audit, evitando che l'automazione delle risorse umane diventi un punto di vulnerabilità normativa per l'organizzazione."
+    },
+    {
+     "tema_id": "t14",
+     "commento_adattato": "Questa notizia non riguarda direttamente il segmento della grande impresa manifatturiera, poiché si focalizza sull'implementazione dell'IA all'interno di un ente di pubblica amministrazione regionale."
+    }
+   ]
+  },
+  "moda e retail|sperimentale|media impresa": {
+   "intro_segmento": "Per un'azienda di moda e retail in fase sperimentale, la sfida attuale è trasformare i primi pilota in soluzioni scalabili, ottimizzando i costi e garantendo la conformità normativa.",
+   "ordine": [
+    "t4",
+    "t7",
+    "t2",
+    "t1",
+    "t5",
+    "t11",
+    "t14"
+   ],
+   "adattamenti": [
+    {
+     "tema_id": "t4",
+     "commento_adattato": "Per un Head of AI nel retail, il passaggio agli Small Language Models (SLM) è una leva strategica per passare dalla sperimentazione alla produzione. Invece di dipendere da LLM generalisti e costosi, gli SLM permettono di creare assistenti virtuali o motori di raccomandazione addestrati su cataloghi prodotti e dati cliente proprietari, riducendo drasticamente i costi di inferenza e i rischi di data leakage. Vi suggeriamo di analizzare i vostri attuali pilota: molti task specifici del settore moda possono essere gestiti da modelli più piccoli, ottimizzando il TCO e migliorando la latenza di risposta per l'utente finale. È il momento di valutare l'implementazione di modelli verticali che garantiscano maggiore controllo e privacy rispetto alle API dei grandi vendor."
+    },
+    {
+     "tema_id": "t7",
+     "commento_adattato": "Il successo del passaggio dai pilota alla scala industriale dipende dalle competenze interne. Per una media impresa, i bandi 2026 per l'upskilling sono l'opportunità per finanziare la formazione senza pesare sul budget operativo. Non limitatevi a corsi di 'AI literacy' generica; focalizzatevi su percorsi tecnici per i team che gestiscono l'e-commerce e il marketing, legandoli a KPI di business concreti, come l'ottimizzazione della supply chain tramite agenti IA. Vi consigliamo di mappare i gap di competenze necessari per industrializzare i casi d'uso già testati e di coordinarvi con l'HR per strutturare percorsi formativi che trasformino la sperimentazione in valore misurabile."
+    },
+    {
+     "tema_id": "t2",
+     "commento_adattato": "L'apertura della sezione SIMEST per IA e Quantum Computing è un'opportunità per finanziare l'espansione internazionale dei vostri sistemi di IA, riducendo l'impatto sull'OPEX. Per una media impresa di moda, questo può significare accelerare l'adozione di tecnologie avanzate per l'ottimizzazione della logistica globale o la previsione della domanda su mercati esteri. Sebbene il Quantum Computing sembri lontano, monitorare questi fondi permette di testare soluzioni di ottimizzazione complessa (es. gestione stock e rotte) senza gravare interamente sul budget di innovazione. Verificate se i vostri progetti di internazionalizzazione sono compatibili con i requisiti del Fondo 384/81 per mitigare il rischio finanziario dell'innovazione."
+    },
+    {
+     "tema_id": "t1",
+     "commento_adattato": "Il decreto 160/2026 introduce rischi concreti per chi utilizza l'IA nel retail, specialmente in caso di sistemi di riconoscimento facciale per la sicurezza o l'analisi del customer journey nei punti vendita fisici. Come Head of AI, dovete mappare ogni caso d'uso biometrico e aggiornare gli SLA con i fornitori per chiarire la responsabilità in caso di danni o reati. È fondamentale definire chi detiene la supervisione umana (human-in-the-loop) per evitare che l'azienda sia l'unica responsabile legale di un malfunzionamento algoritmico. Avviate un audit di conformità con l'ufficio legale per censire i sistemi in produzione che interagiscono con dati biometrici, prevenendo sanzioni severe."
+    },
+    {
+     "tema_id": "t5",
+     "commento_adattato": "L'applicazione dell'AI Act nel settore scolastico offre spunti utili per la gestione del talento in azienda. Se utilizzate l'IA per il recruiting o la valutazione delle performance del personale retail, potreste ricadere in categorie di rischio simili a quelle dell'istruzione. Vi suggeriamo di verificare, insieme al DPO, se i vostri algoritmi di gestione HR influenzino l'accesso a opportunità professionali; in tal caso, i requisiti di trasparenza e audit saranno rigorosi. Studiare questi precedenti normativi vi permette di costruire sistemi di gestione del personale equi e conformi, evitando sanzioni legate a bias algoritmici."
+    },
+    {
+     "tema_id": "t11",
+     "commento_adattato": "Questa notizia è rilevante solo se la vostra impresa fornisce soluzioni tecnologiche o servizi di IA alla Pubblica Amministrazione."
+    },
+    {
+     "tema_id": "t14",
+     "commento_adattato": "Questa notizia è rilevante solo se la vostra impresa collabora con la PA regionale o fornisce servizi di consulenza per la trasformazione digitale pubblica."
+    }
+   ]
+  }
+ }
+}

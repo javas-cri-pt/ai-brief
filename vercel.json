@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 300,
+      "includeFiles": "{core/**,public/replay.json}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/pannello/:token",
+      "destination": "/pannello.html"
+    }
+  ]
+}
